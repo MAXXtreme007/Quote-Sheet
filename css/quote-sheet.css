@@ -1,0 +1,357 @@
+    /* ==================================================
+   Default Typography
+================================================== */
+    
+    h1,
+    h2,
+    h3 {
+        margin: 0px;
+        letter-spacing: -1px;
+        font-weight: 300;
+    }
+    
+    h2 {
+        font-size: 38px;
+        line-height: 38px;
+    }
+    
+    h3 {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .table-header {
+        background-color: #35495D;
+        color: #FFF;
+        font-size: 1.5em;
+        font-weight: bolder;
+    }
+    
+    input {
+        text-align: center;
+    }
+    
+    label {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    label.btn:first-of-type {
+        border-radius: 50px 0 0 50px;
+    }
+    
+    label.btn:last-of-type {
+        border-radius: 0 50px 50px 0;
+    }
+    
+    .btn-group-inline {
+        height: 34px;
+    }
+    
+    .btn-group-vertical {
+        display: block;
+        padding: 10px 0;
+    }
+    
+    .row {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+    /*.row:nth-of-type(n+1) {
+    padding-top: 10px;
+  }*/
+    
+    .xl-header {
+        background-color: #35495D;
+        color: #FFF;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 20px 0 -20px 0;
+    }
+    
+    .xl-header h3 {
+        padding: 5px;
+        margin: 0px;
+        font-weight: bold;
+        font-size: 2.5em;
+    }
+    
+    .l-header {
+        background-color: #FF6600;
+        color: #FFF;
+        font-size: 2em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    
+    .l-header h3 {
+        padding: 5px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .s-header {
+        /*background-color: #61686B;
+    color: #FFF;*/
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    
+    .s-header label {
+        padding: 5px;
+        margin: 0px;
+    }
+    
+    .table {
+        margin: 0px;
+    }
+    
+    th.text-center {
+        /*background-color: #7A7A7A;
+      color: #FFF;*/
+    }
+    
+    td {
+        text-align: center;
+    }
+    
+    .stretch {
+        padding: 0px;
+    }
+    
+    .col {
+        padding: 0px;
+    }
+    
+    .input-group {
+        width: 100%;
+    }
+    
+    .input-group-addon:last-child {
+        border-radius: 0 50px 50px 0;
+    }
+    /* ==================================================
+   JQuery Autocomplete
+================================================== */
+    
+    .ui-autocomplete {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        min-width: 160px;
+        padding: 4px 0;
+        margin: 0 0 10px 25px;
+        list-style: none;
+        background-color: #ffffff;
+        border-color: #ccc;
+        border-color: rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 1px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        -webkit-background-clip: padding-box;
+        -moz-background-clip: padding;
+        background-clip: padding-box;
+        *border-right-width: 2px;
+        *border-bottom-width: 2px;
+    }
+    
+    .ui-menu-item {
+        display: block;
+        padding: 3px 25px;
+        clear: both;
+        font-weight: normal;
+        text-align: center;
+        font-size: 1.5em;
+        line-height: 30px;
+        color: #555555;
+        white-space: nowrap;
+        text-decoration: none;
+    }
+    
+    .ui-state {
+        color: #FFF;
+        text-decoration: none;
+        background-color: #FF6600;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        background-image: none;
+    }
+    
+    .ui-state-hover,
+    .ui-state-active {
+        text-align: center;
+        font-size: 1.3em;
+        color: #FFF;
+        text-decoration: none;
+        background-color: #FF6600;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        background-image: none;
+    }
+    /* ==================================================
+   Input
+================================================== */
+    
+    .regular-checkbox {
+        -webkit-appearance: none;
+        background-color: #fafafa;
+        border: 1px solid #cacece;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+        padding: 9px;
+        border-radius: 3px;
+        display: inline-block;
+        position: relative;
+    }
+    
+    .regular-checkbox:active,
+    .regular-checkbox:checked:active {
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .regular-checkbox:checked {
+        background-color: #e9ecee;
+        border: 1px solid #adb8c0;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+        color: #99a1a7;
+    }
+    
+    .regular-checkbox:checked:after {
+        content: '\2714';
+        font-size: 14px;
+        position: absolute;
+        top: 0px;
+        left: 3px;
+        color: #99a1a7;
+    }
+    
+    .big-checkbox {
+        padding: 18px;
+        width: 34px !important;
+    }
+    
+    .big-checkbox:checked:after {
+        font-size: 28px;
+        left: 6px;
+    }
+    
+    input.regular-checkbox.big-checkbox {
+        padding: 18px;
+        width: 34px !important;
+    }
+    
+    input[type=checkbox] {
+        margin: 0 0 -10px 0;
+    }
+    
+    input[type="text"].req {
+        border: 3px solid #d66
+    }
+    
+    input[type="checkbox"].req {
+        border: 3px solid #d66
+    }
+    /* ==================================================
+   Leads Form
+================================================== */
+    
+    .thank-you {
+        font-size: 16px;
+        padding: 20px;
+    }
+    
+    #leads-form {
+        padding: 0px;
+    }
+    
+    #leads-form input {
+        width: 100%;
+    }
+    
+    .form-control {
+        width: 100% !important;
+        border-radius: 50px;
+        text-align: center;
+    }
+    
+    .form-group {
+        margin: 0px;
+    }
+    
+    .help-block {
+        margin-left: 10px;
+    }
+    
+    .progress {
+        width: 300px;
+        height: 10px;
+        border-radius: 0px;
+        margin-top: 2px;
+    }
+    /* ==================================================
+   Modal
+================================================== */
+    
+    h2.modal-title {
+        text-align: center;
+        color: #FC6621;
+        font-weight: bold;
+    }
+    
+    .btn-default.active {
+        background-color: #FF6600;
+        color: #FFF;
+    }
+    
+    .btn-default.active:hover {
+        background-color: #FF6600;
+        color: #FFF;
+    }
+    
+    .btn-warning:hover {
+        background-color: #FF6600;
+    }
+    
+    #submit {
+        padding: 20px 0;
+    }
+    
+    #btn-submit {
+        display: block;
+        padding: 10px 25px;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #61686B;
+        border-color: #61686B;
+        color: #FFF;
+        margin: 0 auto;
+    }
+    
+    #btn-submit:hover {
+        background-color: #FF6600;
+        border-color: #FF6600;
+        color: #FFF;
+    }
+    
+    #liner-walls {
+        display: none;
+    }
+    #wainscot-walls {
+        display: none;
+    }
+    #overhang-walls {
+        display: none;
+    }

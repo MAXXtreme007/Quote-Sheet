@@ -1,0 +1,2150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="MAXXtreme">
+    <title>Steel Tech Quote Sheet</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-hQpvDQiCJaD2H465dQfA717v7lu5qHWtDbWNPvaTJ0ID5xnPUlVXnKzq7b8YUkbN" crossorigin="anonymous">
+    <!-- <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <link href="https://scheduling-1252.restdb.io/assets/css/jquery.datetimepicker.min.css" rel="stylesheet"> -->
+    <!-- <link href="{{root}}/quote-sheet.css" rel="stylesheet">
+    <link href="{{root}}/dropdown.css" rel="stylesheet">
+    <link href="{{root}}/dashboard.css" rel="stylesheet"> -->
+    <link href="css/quote-sheet.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="special dashboard-header">
+                <div class="row nav-wrapper">
+                    <nav class="navbar navbar-fixed-top navbar-inverse">
+                        <div class="container-fluid">
+                            <a id="mobile-logo" class="navbar-center" href="#"><img src="media/Steel Tech Circle.png" alt="Steel Tech Logo" height: "64" width="66"></a>
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-8">
+                                    <ul class="nav navbar-nav navbar-center justified">
+                                        <li><a href="#Projects">Projects</a></li>
+                                        <li><a href="#Leads">Leads</a></li>
+                                        <a id="full-logo" class="navbar-brand" href="#"><img src="media/Steel Tech Circle.png" alt="Steel Tech Logo" height: "98" width="100"></a>
+                                        <li><a href="../dealers.html">Dealers</a></li>
+                                        <li><a href="#Employees">Employees</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-2">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#" class="btn-login log">Log In</a></li>
+                                        <div id="user-dropdown" class="dropdown" style="display: none">
+                                            <li>
+                                                <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span class="nickname"></span><b class="caret"></b></a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="#"><img width="20px" alt="Avatar" class="avatar"></a>
+                                                    </li>
+                                                    <li><a href="#" class="btn-logout log" style="display:none;">Log Out</a></li>
+                                                </ul>
+                                            </li>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="title" class="col-sm-12 special">
+                <h1>Quote Sheet</h1>
+                <hr class="separator">
+            </div>
+        </div>
+        <form role="form" id="leads-form">
+            <!-- <div class="form-group">
+                <label class="s-header">Revision</label>
+                <input class="form-control" name="Revision" data-type="number" type="text">
+            </div>
+            <div class="form-group">
+                <label class="s-header">Option</label>
+                <input class="form-control" name="Option" data-type="number" type="text">
+            </div> -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Job Information</h3>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="job-name">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Job Name
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Name" title="Job Name" name="Jobname" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="job-address">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Job Address
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Address" title="Job Address" name="Job Address" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="job-city">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Job City
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="City" title="Job City" name="Job City" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="job-state">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Job State
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input id="state" class="form-control req" placeholder="State" title="Job State" name="Job State" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="job-zip">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Job Zip
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Zip" title="Job Zip" name="Job Zip" data-type="number" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Delivery Information</h3>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="delivery-contact">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Delivery Contact
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Name" title="Delivery Contact" name="Delivery Contact" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="csmi-rep">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                CSMI Representative
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Name" title="CSMI Representative Name" name="CSMI Representative" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="delivery-phone">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Delivery Phone
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Phone" title="Delivery Phone" name="Delivery Phone" data-type="text" type="text" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="delivery-email">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Delivery Email
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <input class="form-control req" placeholder="Email" title="Delivery Email" name="Delivery Email" data-type="email" type="email" required>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-12 stretch">
+                                <div class="form-group">
+                                    <div class="col-md-12 stretch">
+                                        <table class="table table-bordered table-hover table-responsive" id="city-limits">
+                                            <thead>
+                                                <tr>
+                                                    <th class="text-center">
+                                                        City Limits
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="btn-group-inline req" data-toggle="buttons">
+                                                            <label class="btn btn-default col-xs-6">
+                                                                <input type="radio" name="city-limits" id="city-limits-no" autocomplete="off" value="No">No
+                                                            </label>
+                                                            <label class="btn btn-default col-xs-6">
+                                                                <input type="radio" name="city-limits" id="city-limits-yes" autocomplete="off" value="Yes">Yes
+                                                            </label>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="xl-header">
+                    <h3>Building Information</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Structure Information</h3>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Base Condition</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="base-condition">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-4">
+                                                        <input type="radio" name="base-condition" id="base-condition-cs" autocomplete="off" value="Concrete Slab">Concrete Slab
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-4">
+                                                        <input type="radio" name="base-condition" id="base-condition-sw" autocomplete="off" value="Stem Wall">Stem Wall
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-4">
+                                                        <input type="radio" name="base-condition" id="base-condition-wop" autocomplete="off" value="Walls on Piers">Walls on Piers
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Dimensions</label>
+                            <div class="col-xs-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="out-to-out-width">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Out-to-Out Width
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Out-to-Out Width Feet" data-type="number" type="text" placeholder="Feet" />
+                                                    <span class="input-group-addon">-</span>
+                                                    <input class="form-control" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="out-to-out-length">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Out-to-Out Length
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" />
+                                                    <span class="input-group-addon">-</span>
+                                                    <input class="form-control" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Sidewall Eave Height FSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" />
+                                                    <span class="input-group-addon">-</span>
+                                                    <input class="form-control" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Sidewall Eave Height BSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" />
+                                                    <span class="input-group-addon">-</span>
+                                                    <input class="form-control" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="cables">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Bay Spacing Sidewall/Frame
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Bay Spacing Sidewalls" data-type="number" type="text" placeholder="# Bays" />
+                                                    <span class="input-group-addon">@</span>
+                                                    <input class="form-control" name="Bay Spacing Length" data-type="number" type="text" placeholder="Length" />
+                                                    <span class="input-group-addon">ft</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Remove Sheeting/Girts</label>
+                            <div class="col-xs-3 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="remove-sheeting-lew">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                LEW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts LEW" id="remove-sheeting-lew-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts LEW" id="remove-sheeting-lew-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-3 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="remove-sheeting-rew">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                REW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts REW" id="remove-sheeting-rew-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts REW" id="remove-sheeting-rew-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-3 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="remove-sheeting-fsw">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                FSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts FSW" id="remove-sheeting-fsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts FSW" id="remove-sheeting-fsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-3 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="remove-sheeting-bsw">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                BSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts BSW" id="remove-sheeting-bsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Remove Sheeting/Girts BSW" id="remove-sheeting-bsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Future Expansion</label>
+                            <div class="col-xs-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="future-expansion">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                LEW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Future Expansion LEW No" id="future-expansion-lew-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Future Expansion LEW Yes" id="future-expansion-lew-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-xs-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="future-expansion">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                REW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Future Expansion REW No" id="future-expansion-rew-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Future Expansion REW Yes" id="future-expansion-rew-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Cables</label>
+                            <div class="col-md-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="cables">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                FSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Cables FSW No" id="cable-fsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Cables FSW Yes" id="cable-fsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="cables">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                BSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Cables BSW No" id="cable-bsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Cables BSW Yes" id="cable-bsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Wind Column</label>
+                            <div class="col-md-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wind-column">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                FSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wind Column FSW No" id="wind-column-fsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wind Column FSW Yes" id="wind-column-fsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wind-column">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                BSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wind Column BSW No" id="wind-column-bsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wind Column BSW Yes" id="wind-column-bsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Portal Frame</label>
+                            <div class="col-md-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="portal-frame">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                FSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Portal Frame FSW No" id="portal-frame-fsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Portal Frame FSW Yes" id="portal-frame-fsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="portal-frame">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                BSW
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Portal Frame BSW No" id="portal-frame-bsw-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Portal Frame BSW Yes" id="portal-frame-bsw-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Roof</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="cables">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Roof Slope
+                                            </th>
+                                            <th class="col-sm-4 text-center">
+                                                Roof Pitch
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-sm-8">
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Roof Slope S/D" id="roof-slope-single" autocomplete="off" value="Single">Single
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Roof Slope S/D" id="roof-slope-double" autocomplete="off" value="Double">Double
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td class="col-sm-4">
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Roof Pitch" data-type="number" type="number" placeholder="Pitch">
+                                                    <span class="input-group-addon">: 12</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Overhang</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="overhang">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div id="liner" class="btn-group-inline" data-toggle="buttons">
+                                                    <label id="wainscot-no" class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Overhang" id="overhang-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label id="wainscot-yes" class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Overhang" id="overhang-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="wainscot-all" class="col-md-12 stretch hide">
+                                <table class="table table-bordered table-hover table-responsive" id="wainscot-apply-all">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Overhang Length
+                                            </th>
+                                            <th class="col-sm-4 text-center">
+                                                Apply to All Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-sm-9">
+                                                <div class="input-group">
+                                                    <input id="overhang-all-ft" class="form-control" name="Overhang Length Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <span class="input-group-addon">ft</span>
+                                                    <input id="overhang-all-in" class="form-control" name="Overhang Length Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <span class="input-group-addon">in</span>
+                                                </div>
+                                            </td>
+                                            <td class="col-sm-3">
+                                                <input id="overhang-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Overhang All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="overhang-walls" class="row">
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="overhang-lew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    LEW
+                                                </th>
+                                                <th class="text-center">
+                                                    Soffit
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Overhang LEW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Overhang LEW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="form-control regular-checkbox big-checkbox" name="Soffit LEW" data-type="bool" type="checkbox">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="overhang-rew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    REW
+                                                </th>
+                                                <th class="text-center">
+                                                    Soffit
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Overhang REW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Overhang REW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="form-control regular-checkbox big-checkbox" name="Soffit REW" data-type="bool" type="checkbox">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-fsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    FSW
+                                                </th>
+                                                <th class="text-center">
+                                                    Soffit
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Overhang FSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Overhang FSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="form-control regular-checkbox big-checkbox" name="Soffit FSW" data-type="bool" type="checkbox">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-bsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    BSW
+                                                </th>
+                                                <th class="text-center">
+                                                    Soffit
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Overhang BSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Overhang BSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <input class="form-control regular-checkbox big-checkbox" name="Soffit BSW" data-type="bool" type="checkbox">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Panel Information</h3>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Roof Panel Type</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="roof-panel-type">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="RLoc">R Loc
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="SSeam">S Seam
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Roof Panel Color</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="roof-panel-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Galvalume">Galvalume
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Color">Color
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Wall Panel Color</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wall-panel-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Galvalume">Galvalume
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Color">Color
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Trim Color</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Galvalume">Galvalume
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Color">Color
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Panel Notch</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Panel Notch" id="panel-notch" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Panel Notch" id="panel-notch" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Gutter</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Gutter" id="gutter" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Gutter" id="gutter" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Wainscot</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wainscot">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div id="liner" class="btn-group-inline" data-toggle="buttons">
+                                                    <label id="wainscot-no" class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wainscot" id="wainscot-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label id="wainscot-yes" class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wainscot" id="wainscot-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="wainscot-all" class="col-md-12 stretch hide">
+                                <table class="table table-bordered table-hover table-responsive" id="wainscot-apply-all">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Wainscot Height
+                                            </th>
+                                            <th class="col-sm-4 text-center">
+                                                Apply to All Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-sm-9">
+                                                <div class="input-group">
+                                                    <input id="wainscot-all-ft" class="form-control" name="Wainscot Height Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <span class="input-group-addon">ft</span>
+                                                    <input id="wainscot-all-in" class="form-control" name="Wainscot Height Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <span class="input-group-addon">in</span>
+                                                </div>
+                                            </td>
+                                            <td class="col-sm-3">
+                                                <input id="wainscot-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Wainscot All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="wainscot-walls" class="row">
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-lew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    LEW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-lew-ft" class="form-control" name="Wainscot LEW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-lew-in" class="form-control" name="Wainscot LEW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-rew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    REW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-rew-ft" class="form-control" name="Wainscot REW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-rew-in" class="form-control" name="Wainscot REW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-fsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    FSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-fsw-ft" class="form-control" name="Wainscot FSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-fsw-in" class="form-control" name="Wainscot FSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-bsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    BSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-bsw-ft" class="form-control" name="Wainscot BSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-bsw-in" class="form-control" name="Wainscot BSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Liner</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="liner">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div id="liner" class="btn-group-inline" data-toggle="buttons">
+                                                    <label id="liner-panel-no" class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="Liner Panel" id="liner-panel-no" autocomplete="off" value="None">None
+                                                    </label>
+                                                    <label id="liner-panel-ploc" class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="Liner Panel" id="liner-panel-ploc" autocomplete="off" value="PLoc">P Loc+
+                                                    </label>
+                                                    <label id="liner-panel-rloc" class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="Liner Panel" id="liner-panel-rloc" autocomplete="off" value="RLoc">R Loc
+                                                    </label>
+                                                    <label id="liner-panel-mloc" class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="Liner Panel" id="liner-panel-mloc" autocomplete="off" value="MLoc">M Loc
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="liner-walls-all" class="col-md-12 stretch hide">
+                                <table class="table table-bordered table-hover table-responsive" id="liner-apply-all">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Liner Height
+                                            </th>
+                                            <th class="col-sm-4 text-center">
+                                                Apply to All Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-sm-9">
+                                                <div class="input-group">
+                                                    <input id="liner-all-ft" class="form-control" name="Liner Height Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <span class="input-group-addon">ft</span>
+                                                    <input id="liner-all-in" class="form-control" name="Liner Height Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <span class="input-group-addon">in</span>
+                                                </div>
+                                            </td>
+                                            <td class="col-sm-3">
+                                                <input id="liner-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Liner All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="liner-walls" class="row">
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="liner-lew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    LEW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Liner LEW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Liner LEW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="liner-rew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    REW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Liner REW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Liner REW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="liner-fsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    FSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Liner FSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Liner FSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="liner-bsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    BSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Liner BSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Liner BSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="overhang">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Roof
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Roof Liner" id="roof-liner-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Roof Liner" id="roof-liner-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="l-header text-center">
+                            <label>Framed Openings</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center table-header">
+                            <label class="s-header table-header">Left End Wall</label>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="col-sm-2 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-qty">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Quantity
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-lew-qty0'>
+                                        <td>
+                                            <input class="form-control" name="Framed Openings LEW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-lew-qty1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-w">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Width
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-lew-w0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings LEW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings LEW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-lew-w1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-h">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Height
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-lew-h0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings LEW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings LEW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-lew-h1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="btn-group-vertical" role="group" aria-label="...">
+                            <a id="add_row_fo_lew" class="btn btn-success">Add Row</a>
+                            <a id='delete_row_fo_lew' class="btn btn-danger">Delete Row</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center table-header">
+                            <label class="s-header table-header">Right End Wall</label>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="col-sm-2 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-rew-qty">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Quantity
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-rew-qty0'>
+                                        <td>
+                                            <input class="form-control" name="Framed Openings REW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-rew-qty1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-rew-w">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Width
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-rew-w0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings REW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings REW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-rew-w1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-rew-h">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Height
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-rew-h0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings REW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings REW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-rew-h1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="btn-group-vertical" role="group" aria-label="...">
+                            <a id="add_row_fo_rew" class="btn btn-success">Add Row</a>
+                            <a id='delete_row_fo_rew' class="btn btn-danger">Delete Row</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center table-header">
+                            <label class="s-header table-header">Front Side Wall</label>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="col-sm-2 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-fsw-qty">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Quantity
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-fsw-qty0'>
+                                        <td>
+                                            <input class="form-control" name="Framed Openings FSW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-fsw-qty1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-fsw-w">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Width
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-fsw-w0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings FSW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings FSW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-fsw-w1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-fsw-h">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Height
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-fsw-h0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings FSW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings FSW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-fsw-h1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="btn-group-vertical" role="group" aria-label="...">
+                            <a id="add_row_fo_fsw" class="btn btn-success">Add Row</a>
+                            <a id='delete_row_fo_fsw' class="btn btn-danger">Delete Row</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center table-header">
+                            <label class="s-header table-header">Back Side Wall</label>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="col-sm-2 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-bsw-qty">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Quantity
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-bsw-qty0'>
+                                        <td>
+                                            <input class="form-control" name="Framed Openings BSW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-bsw-qty1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-bsw-w">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Width
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-bsw-w0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings BSW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings BSW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-bsw-w1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-sm-5 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo-bsw-h">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Height
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr id='addr-fo-bsw-h0'>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings BSW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings BSW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    <tr id='addr-fo-bsw-h1'></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="btn-group-vertical" role="group" aria-label="...">
+                            <a id="add_row_fo_bsw" class="btn btn-success">Add Row</a>
+                            <a id='delete_row_fo_bsw' class="btn btn-danger">Delete Row</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="text-center table-header">
+                            <label class="s-header table-header">Walk Doors</label>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <table class="table table-bordered table-hover table-responsive" id="fo_bsw">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">
+                                        CSM 3070
+                                    </th>
+                                    <th class="text-center">
+                                        CSM 4070
+                                    </th>
+                                    <th class="text-center">
+                                        CSM 6070
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <input class="form-control" name="CSM Walk Doors 3070" data-type="number" type="text" placeholder="Qty" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="CSM Walk Doors 4070" data-type="number" type="text" placeholder="Qty" />
+                                    </td>
+                                    <td>
+                                        <input class="form-control" name="CSM Walk Doors 6070" data-type="number" type="text" placeholder="Qty" />
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Additional Options</h3>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Insulation</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="insulation">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label id="insulation-none" class="btn btn-default col-xs-4">
+                                                        <input type="radio" name="Insulation" autocomplete="off" value="None">None
+                                                    </label>
+                                                    <label id="insulation-fiberglass" class="btn btn-default col-xs-4">
+                                                        <input type="radio" name="Insulation" autocomplete="off" value="Fiberglass">Fiberglass
+                                                    </label>
+                                                    <label id="insulation-foam" class="btn btn-default col-xs-4">
+                                                        <input type="radio" name="Insulation" autocomplete="off" value="Spray Foam">Spray Foam
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="insulation-walls" class="row hide">
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="insulation-wall">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Insulation Wall
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Insulation Wall Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Insulation Wall Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="insulation-roof">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Insulation Roof
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Insulation Roof Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Insulation Roof Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Miscellaneous</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Engineer's Stamp
+                                            </th>
+                                            <th class="text-center">
+                                                Concrete Drawings
+                                            </th>
+                                            <th class="text-center">
+                                                Heated
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Engineers Stamp" id="engineer-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Engineers Stamp" id="engineer-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Concrete Drawings" id="concrete-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Concrete Drawings" id="concrete-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Heated" id="heated-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Heated" id="heated-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Building Specifications</h3>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Loads</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="insulation">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="load" id="load-1" autocomplete="off" value="I: Low, Storage, Warehouse, or Agricultural">I
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="load" id="load-2" autocomplete="off" value="II: Normal, Standard Building">II
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="load" id="load-3" autocomplete="off" value="III: High Schools, Large Occupancy">III
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-3">
+                                                        <input type="radio" name="load" id="load-4" autocomplete="off" value="IV: Post Essential, Fire Department, Hospital">IV
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="insulation-wall">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Building Code
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Building Code" data-type="text" type="text" placeholder="Buidling Code">
+                                                    <a class="btn btn-warning input-group-addon" data-toggle="modal" data-target="#building-codes"><span>More Info</span></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Roof Live Load Reduction</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="roof-live-load-reduction">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Roof Live Load Reduction" id="roof-load-reduction-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Roof Live Load Reduction" id="roof-load-reduction-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Wind Exposure</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wind-exposure">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wind Exposure" id="wind-b" autocomplete="off" value="B">B
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wind Exposure" id="wind-c" autocomplete="off" value="C">C
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">External Forces</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="external-forces">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Ground Snow
+                                            </th>
+                                            <th class="text-center">
+                                                Collateral Load
+                                            </th>
+                                            <th class="text-center">
+                                                Wind Speed
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Ground Snow (psf)" data-type="number" type="text" placeholder="psf">
+                                                    <span class="input-group-addon">psf</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Collateral Load (psf)" data-type="number" type="text" placeholder="psf">
+                                                    <span class="input-group-addon">psf</span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Wind Speed (mph)" data-type="number" type="text" placeholder="mph">
+                                                    <span class="input-group-addon">mph</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="fg-errors" class="form-group">
+                    </div>
+                </div>
+            </div>
+            <div class="modal" id="building-codes">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h2 class="modal-title">Building Codes</h2>
+                        </div>
+                        <div class="modal-body">
+                            <h2 class="text-center">Building Load Categories</h2>
+                            <h4>Load I: Low, Storage, Warehouse, or Agricultural</h4>
+                            <h4>Load II: Normal, Standard Building</h4>
+                            <h4>Load III: High Schools, Large Occupancy</h4>
+                            <h4>Load IV: Post Essential, Fire Department, Hospital</h4>
+                            <h2 class="text-center">Building Codes</h2>
+                            <h4>If you know a specific building code that you would like to add, put it in the building code input.</h4>
+                            <h4>If you do not know what this is, do not input anything.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="submit" class="col-sm-12">
+                <button class="btn btn-primary btn-lg" id="btn-submit" type="submit" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Submitting...">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+    <!--     <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://scheduling-1252.restdb.io/assets/js/jquery-serialize-object.min.js"></script>
+    <script src="https://scheduling-1252.restdb.io/assets/js/jquery.datetimepicker.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.min.js"></script> -->
+    <!-- <link href="{{root}}/fields.js" rel="javascript">
+    <link href="{{root}}/dropdown.js" rel="javascript"> -->
+    <script src="js/addRow.js"></script>
+    <script src="js/autocomplete.js"></script>
+    <script src="js/disable.js"></script>
+    <script src="js/formValidation.js"></script>
+    <script>
+    $(function() {
+        $("a.pop-me-over").on("click", function(e) {
+            e.preventDefault();
+            return true;
+        });
+        $(".pop-me-over").popover();
+    });
+    </script>
+</body>
+
+</html>
