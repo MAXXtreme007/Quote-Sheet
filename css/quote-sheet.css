@@ -1,4 +1,11 @@
-    /* ==================================================
+html, body {
+  overflow-x: hidden;
+}
+body {
+  position: relative
+}
+
+/* ==================================================
    Default Typography
 ================================================== */
     
@@ -58,9 +65,10 @@
         width: 100%;
         margin: 0;
     }
-    /*.row:nth-of-type(n+1) {
-    padding-top: 10px;
-  }*/
+
+    .container {
+        padding: 0px;
+    }
     
     .xl-header {
         background-color: #35495D;
@@ -292,6 +300,7 @@
     
     #leads-form {
         padding: 0px;
+        margin: 0 auto;
     }
     
     #leads-form input {
