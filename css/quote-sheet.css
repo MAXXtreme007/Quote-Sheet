@@ -336,6 +336,10 @@ body {
         color: #FC6621;
         font-weight: bold;
     }
+
+    #notes {
+        text-align: left;
+    }
     
     .btn-default.active {
         background-color: #FF6600;

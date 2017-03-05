@@ -16,6 +16,7 @@
     <link href="{{root}}/dashboard.css" rel="stylesheet"> -->
     <link href="css/quote-sheet.css" rel="stylesheet">
     <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/dropzone.css" rel="stylesheet">
     <script src="js/analytics.js"></script>
 </head>
 
@@ -951,11 +952,11 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="RLoc">R Loc
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6">
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="SSeam">S Seam
                                                     </label>
                                                 </div>
@@ -974,11 +975,11 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Galvalume">Galvalume
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6">
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Color">Color
                                                     </label>
                                                 </div>
@@ -997,11 +998,11 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Galvalume">Galvalume
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6">
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Color">Color
                                                     </label>
                                                 </div>
@@ -1020,11 +1021,11 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Galvalume">Galvalume
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6">
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Color">Color
                                                     </label>
                                                 </div>
@@ -1776,14 +1777,14 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label id="insulation-none" class="btn btn-default col-xs-4">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label id="insulation-none" class="btn btn-default col-xs-4 req">
                                                         <input type="radio" name="Insulation" autocomplete="off" value="None">None
                                                     </label>
-                                                    <label id="insulation-fiberglass" class="btn btn-default col-xs-4">
+                                                    <label id="insulation-fiberglass" class="btn btn-default col-xs-4 req">
                                                         <input type="radio" name="Insulation" autocomplete="off" value="Fiberglass">Fiberglass
                                                     </label>
-                                                    <label id="insulation-foam" class="btn btn-default col-xs-4">
+                                                    <label id="insulation-foam" class="btn btn-default col-xs-4 req">
                                                         <input type="radio" name="Insulation" autocomplete="off" value="Spray Foam">Spray Foam
                                                     </label>
                                                 </div>
@@ -1857,11 +1858,11 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="Engineers Stamp" id="engineer-no" autocomplete="off" value="No">No
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6">
+                                                    <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="Engineers Stamp" id="engineer-yes" autocomplete="off" value="Yes">Yes
                                                     </label>
                                                 </div>
@@ -1922,6 +1923,54 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Notes</label>
+                            <div class="col-sm-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Please note any interior columns or any other relevant features in notes section.
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <textarea id="notes" class="form-control" name="Notes" data-type="text" type="text"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Files</label>
+                            <div class="col-sm-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Please attach any applicable sketches or files.
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="files" type="file" data-type="file" name="Files" class="form-control" multiple />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="l-header">
@@ -1931,21 +1980,21 @@
                         <div class="form-group">
                             <label class="s-header table-header">Loads</label>
                             <div class="col-md-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="insulation">
+                                <table class="table table-bordered table-hover table-responsive" id="loads">
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-3">
+                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                    <label class="btn btn-default col-xs-3 req">
                                                         <input type="radio" name="load" id="load-1" autocomplete="off" value="I: Low, Storage, Warehouse, or Agricultural">I
                                                     </label>
-                                                    <label class="btn btn-default col-xs-3">
+                                                    <label class="btn btn-default col-xs-3 req">
                                                         <input type="radio" name="load" id="load-2" autocomplete="off" value="II: Normal, Standard Building">II
                                                     </label>
-                                                    <label class="btn btn-default col-xs-3">
+                                                    <label class="btn btn-default col-xs-3 req">
                                                         <input type="radio" name="load" id="load-3" autocomplete="off" value="III: High Schools, Large Occupancy">III
                                                     </label>
-                                                    <label class="btn btn-default col-xs-3">
+                                                    <label class="btn btn-default col-xs-3 req">
                                                         <input type="radio" name="load" id="load-4" autocomplete="off" value="IV: Post Essential, Fire Department, Hospital">IV
                                                     </label>
                                                 </div>
@@ -1955,7 +2004,7 @@
                                 </table>
                             </div>
                             <div class="col-md-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="insulation-wall">
+                                <table class="table table-bordered table-hover table-responsive" id="buliding-codes">
                                     <thead>
                                         <tr>
                                             <th class="text-center">
@@ -2134,6 +2183,7 @@
     <script src="js/autocomplete.js"></script>
     <script src="js/disable.js"></script>
     <script src="js/formValidation.js"></script>
+    <script src="js/dropzone.js"></script>
     <script>
     $(function() {
         $("a.pop-me-over").on("click", function(e) {
