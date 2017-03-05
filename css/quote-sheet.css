@@ -256,14 +256,32 @@
         margin: 0 0 -10px 0;
     }
     
-    input[type="text"].req {
+    input.req {
         border: 3px solid #FF6600;
     }
-    
-    input[type="checkbox"].req {
+
+    label.req:first-of-type {
+        border-top: 3px solid #FF6600;
+        border-left: 3px solid #FF6600;
+        border-bottom: 3px solid #FF6600;
+    }
+
+    label.req {
+        border-top: 3px solid #FF6600;
+        border-bottom: 3px solid #FF6600;
+    }
+
+    label.req:last-of-type {
+        border-top: 3px solid #FF6600;
+        border-right: 3px solid #FF6600;
+        border-bottom: 3px solid #FF6600;
+    }
+
+    .fill-border {
         border: 3px solid #FF6600;
     }
-    /* ==================================================
+
+/* ==================================================
    Leads Form
 ================================================== */
     
