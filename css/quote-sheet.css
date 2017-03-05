@@ -257,11 +257,11 @@
     }
     
     input[type="text"].req {
-        border: 3px solid #d66
+        border: 3px solid #FF6600;
     }
     
     input[type="checkbox"].req {
-        border: 3px solid #d66
+        border: 3px solid #FF6600;
     }
     /* ==================================================
    Leads Form
