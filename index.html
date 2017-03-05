@@ -89,7 +89,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="l-header">
-                        <h3>Job Information</h3>
+                        <h3 class="visible-sm visible-md visible-lg">Job Information</h3>
+                        <h3 class="visible-xs">Job Info</h3>
                     </div>
                     <div class="col-lg-12 stretch">
                         <div class="form-group">
@@ -158,7 +159,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="l-header">
-                        <h3>Delivery Information</h3>
+                        <h3 class="visible-sm visible-md visible-lg">Delivery Information</h3>
+                        <h3 class="visible-xs">Delivery Info</h3>
                     </div>
                     <div class="col-lg-12 stretch">
                         <div class="form-group">
@@ -220,7 +222,7 @@
                                                     <td>
                                                         <div class="btn-group-inline" data-toggle="buttons">
                                                             <label class="btn btn-default col-xs-6 req">
-                                                                <input type="radio" name="city-limits" id="city-limits-no" autocomplete="off" value="No">No
+                                                                <input type="radio" name="city-limits" id="city-limits-no" autocomplete="off" value="No" required>No
                                                             </label>
                                                             <label class="btn btn-default col-xs-6 req">
                                                                 <input type="radio" name="city-limits" id="city-limits-yes" autocomplete="off" value="Yes">Yes
@@ -239,13 +241,15 @@
             </div>
             <div class="col-md-12">
                 <div class="xl-header">
-                    <h3>Building Information</h3>
+                    <h3 class="visible-sm visible-md visible-lg">Building Information</h3>
+                    <h3 class="visible-xs">Building Info</h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="l-header">
-                        <h3>Structure Information</h3>
+                        <h3 class="visible-sm visible-md visible-lg">Structure Information</h3>
+                        <h3 class="visible-xs">Structure Info</h3>
                     </div>
                     <div class="col-lg-12 stretch">
                         <div class="form-group">
@@ -255,9 +259,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-4 req">
-                                                        <input type="radio" name="base-condition" id="base-condition-cs" autocomplete="off" value="Concrete Slab">Concrete Slab
+                                                        <input type="radio" name="base-condition" id="base-condition-cs" autocomplete="off" value="Concrete Slab" required>Concrete Slab
                                                     </label>
                                                     <label class="btn btn-default col-xs-4 req">
                                                         <input type="radio" name="base-condition" id="base-condition-sw" autocomplete="off" value="Stem Wall">Stem Wall
@@ -369,7 +373,7 @@
                                 </table>
                             </div>
                             <div class="col-xs-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="cables">
+                                <table class="table table-bordered table-hover table-responsive" id="bay-spacing">
                                     <thead>
                                         <tr>
                                             <th class="text-center">
@@ -513,9 +517,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="Future Expansion LEW No" id="future-expansion-lew-no" autocomplete="off" value="No">No
+                                                        <input type="radio" name="Future Expansion LEW No" id="future-expansion-lew-no" autocomplete="off" value="No" required>No
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="Future Expansion LEW Yes" id="future-expansion-lew-yes" autocomplete="off" value="Yes">Yes
@@ -538,9 +542,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="Future Expansion REW No" id="future-expansion-rew-no" autocomplete="off" value="No">No
+                                                        <input type="radio" name="Future Expansion REW No" id="future-expansion-rew-no" autocomplete="off" value="No" required>No
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="Future Expansion REW Yes" id="future-expansion-rew-yes" autocomplete="off" value="Yes">Yes
@@ -569,10 +573,10 @@
                                         <tr>
                                             <td>
                                                 <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6 req">
+                                                    <label class="btn btn-default col-xs-6">
                                                         <input type="radio" name="Cables FSW No" id="cable-fsw-no" autocomplete="off" value="No">No
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6 req">
+                                                    <label class="btn btn-default col-xs-6">
                                                         <input type="radio" name="Cables FSW Yes" id="cable-fsw-yes" autocomplete="off" value="Yes">Yes
                                                     </label>
                                                 </div>
@@ -594,10 +598,10 @@
                                         <tr>
                                             <td>
                                                 <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6 req">
+                                                    <label class="btn btn-default col-xs-6">
                                                         <input type="radio" name="Cables BSW No" id="cable-bsw-no" autocomplete="off" value="No">No
                                                     </label>
-                                                    <label class="btn btn-default col-xs-6 req">
+                                                    <label class="btn btn-default col-xs-6">
                                                         <input type="radio" name="Cables BSW Yes" id="cable-bsw-yes" autocomplete="off" value="Yes">Yes
                                                     </label>
                                                 </div>
@@ -733,9 +737,9 @@
                                     <tbody>
                                         <tr>
                                             <td class="col-sm-8">
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="Roof Slope S/D" id="roof-slope-single" autocomplete="off" value="Single">Single
+                                                        <input type="radio" name="Roof Slope S/D" id="roof-slope-single" autocomplete="off" value="Single" required>Single
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="Roof Slope S/D" id="roof-slope-double" autocomplete="off" value="Double">Double
@@ -759,7 +763,7 @@
                                         <tr>
                                             <td class="col-sm-4">
                                                 <div class="input-group">
-                                                    <input class="form-control req" name="Roof Pitch" data-type="number" type="number" placeholder="Pitch">
+                                                    <input class="form-control req" name="Roof Pitch" data-type="number" type="number" placeholder="Pitch" required>
                                                     <span class="input-group-addon">: 12</span>
                                                 </div>
                                             </td>
@@ -942,7 +946,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="l-header">
-                        <h3>Panel Information</h3>
+                        <h3 class="visible-sm visible-md visible-lg">Panel Information</h3>
+                        <h3 class="visible-xs">Panel Info</h3>
                     </div>
                     <div class="col-md-6 stretch">
                         <div class="form-group">
@@ -952,9 +957,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="RLoc">R Loc
+                                                        <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="RLoc" required>R Loc
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-type" id="roof-panel-type" autocomplete="off" value="SSeam">S Seam
@@ -975,9 +980,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Galvalume">Galvalume
+                                                        <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Galvalume" required>Galvalume
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="roof-panel-color" autocomplete="off" value="Color">Color
@@ -998,9 +1003,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Galvalume">Galvalume
+                                                        <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Galvalume" required>Galvalume
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="wall-panel-color" autocomplete="off" value="Color">Color
@@ -1021,9 +1026,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Galvalume">Galvalume
+                                                        <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Galvalume" required>Galvalume
                                                     </label>
                                                     <label class="btn btn-default col-xs-6 req">
                                                         <input type="radio" name="roof-panel-color" id="trim-color" autocomplete="off" value="Color">Color
@@ -1767,214 +1772,8 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="l-header">
-                        <h3>Additional Options</h3>
-                    </div>
-                    <div class="col-lg-12 stretch">
-                        <div class="form-group">
-                            <label class="s-header table-header">Insulation</label>
-                            <div class="col-md-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="insulation">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
-                                                    <label id="insulation-none" class="btn btn-default col-xs-4 req">
-                                                        <input type="radio" name="Insulation" autocomplete="off" value="None">None
-                                                    </label>
-                                                    <label id="insulation-fiberglass" class="btn btn-default col-xs-4 req">
-                                                        <input type="radio" name="Insulation" autocomplete="off" value="Fiberglass">Fiberglass
-                                                    </label>
-                                                    <label id="insulation-foam" class="btn btn-default col-xs-4 req">
-                                                        <input type="radio" name="Insulation" autocomplete="off" value="Spray Foam">Spray Foam
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div id="insulation-walls" class="row hide">
-                                <div class="col-md-6 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="insulation-wall">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    Insulation Wall
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input class="form-control" name="Insulation Wall Feet" data-type="number" type="text" placeholder="Feet">
-                                                        <span class="input-group-addon">ft</span>
-                                                        <input class="form-control" name="Insulation Wall Inches" data-type="number" type="text" placeholder="Inches">
-                                                        <span class="input-group-addon">in</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-6 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="insulation-roof">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    Insulation Roof
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input class="form-control" name="Insulation Roof Feet" data-type="number" type="text" placeholder="Feet">
-                                                        <span class="input-group-addon">ft</span>
-                                                        <input class="form-control" name="Insulation Roof Inches" data-type="number" type="text" placeholder="Inches">
-                                                        <span class="input-group-addon">in</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 stretch">
-                        <div class="form-group">
-                            <label class="s-header table-header">Miscellaneous</label>
-                            <div class="col-sm-4 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="misc">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Engineer's Stamp
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
-                                                    <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="Engineers Stamp" id="engineer-no" autocomplete="off" value="No">No
-                                                    </label>
-                                                    <label class="btn btn-default col-xs-6 req">
-                                                        <input type="radio" name="Engineers Stamp" id="engineer-yes" autocomplete="off" value="Yes">Yes
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-sm-4 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="misc">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Concrete Drawings
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Concrete Drawings" id="concrete-no" autocomplete="off" value="No">No
-                                                    </label>
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Concrete Drawings" id="concrete-yes" autocomplete="off" value="Yes">Yes
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-sm-4 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="misc">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Heated
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Heated" id="heated-no" autocomplete="off" value="No">No
-                                                    </label>
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Heated" id="heated-yes" autocomplete="off" value="Yes">Yes
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 stretch">
-                        <div class="form-group">
-                            <label class="s-header table-header">Notes</label>
-                            <div class="col-sm-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="misc">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Please note any interior columns or any other relevant features in notes section.
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <textarea id="notes" class="form-control" name="Notes" data-type="text" type="text"></textarea>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 stretch">
-                        <div class="form-group">
-                            <label class="s-header table-header">Files</label>
-                            <div class="col-sm-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="misc">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Please attach any applicable sketches or files.
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="form-group">
-                                                    <input id="files" type="file" data-type="file" name="Files" class="form-control" multiple />
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="l-header">
-                        <h3>Building Specifications</h3>
+                        <h3 class="visible-sm visible-md visible-lg">Building Specifications</h3>
+                        <h3 class="visible-xs">Building Specs</h3>
                     </div>
                     <div class="col-lg-12 stretch">
                         <div class="form-group">
@@ -1984,9 +1783,9 @@
                                     <tbody>
                                         <tr>
                                             <td>
-                                                <div class="btn-group-inline" data-toggle="buttons" required>
+                                                <div class="btn-group-inline" data-toggle="buttons">
                                                     <label class="btn btn-default col-xs-3 req">
-                                                        <input type="radio" name="load" id="load-1" autocomplete="off" value="I: Low, Storage, Warehouse, or Agricultural">I
+                                                        <input type="radio" name="load" id="load-1" autocomplete="off" value="I: Low, Storage, Warehouse, or Agricultural" required>I
                                                     </label>
                                                     <label class="btn btn-default col-xs-3 req">
                                                         <input type="radio" name="load" id="load-2" autocomplete="off" value="II: Normal, Standard Building">II
@@ -2140,9 +1939,216 @@
                             </div>
                         </div>
                     </div>
-                    <div id="fg-errors" class="form-group">
+                </div>
+                <div class="col-md-6">
+                    <div class="l-header">
+                        <h3>Additional Options</h3>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Insulation</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="insulation">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label id="insulation-none" class="btn btn-default col-xs-4 req">
+                                                        <input type="radio" name="Insulation" autocomplete="off" value="None" required>None
+                                                    </label>
+                                                    <label id="insulation-fiberglass" class="btn btn-default col-xs-4 req">
+                                                        <input type="radio" name="Insulation" autocomplete="off" value="Fiberglass">Fiberglass
+                                                    </label>
+                                                    <label id="insulation-foam" class="btn btn-default col-xs-4 req">
+                                                        <input type="radio" name="Insulation" autocomplete="off" value="Spray Foam">Spray Foam
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="insulation-walls" class="row hide">
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="insulation-wall">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Insulation Wall
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Insulation Wall Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Insulation Wall Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="insulation-roof">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Insulation Roof
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Insulation Roof Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control" name="Insulation Roof Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Miscellaneous</label>
+                            <div class="col-sm-4 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Engineer's Stamp
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6 req">
+                                                        <input type="radio" name="Engineers Stamp" id="engineer-no" autocomplete="off" value="No" required>No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6 req">
+                                                        <input type="radio" name="Engineers Stamp" id="engineer-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-4 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Concrete Drawings
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Concrete Drawings" id="concrete-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Concrete Drawings" id="concrete-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-4 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Heated
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Heated" id="heated-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Heated" id="heated-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Notes</label>
+                            <div class="col-sm-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Please note any interior columns or any other relevant features in notes section.
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <textarea id="notes" class="form-control" name="Notes" data-type="text" type="text"></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Files</label>
+                            <div class="col-sm-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="misc">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Please attach any applicable sketches or files.
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="form-group">
+                                                    <input id="files" type="file" data-type="file" name="Files" class="form-control" multiple />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div id="fg-errors" class="form-group">
             </div>
             <div class="modal" id="building-codes">
                 <div class="modal-dialog">
@@ -2152,11 +2158,11 @@
                             <h2 class="modal-title">Building Codes</h2>
                         </div>
                         <div class="modal-body">
-                            <h2 class="text-center">Building Load Categories</h2>
-                            <h4>Load I: Low, Storage, Warehouse, or Agricultural</h4>
-                            <h4>Load II: Normal, Standard Building</h4>
-                            <h4>Load III: High Schools, Large Occupancy</h4>
-                            <h4>Load IV: Post Essential, Fire Department, Hospital</h4>
+                            <h2 class="text-center">Load Categories</h2>
+                            <h4><span style="color: #FF6600; font-weight: bold;">I: </span>Low, Storage, Warehouse, or Agricultural</h4>
+                            <h4><span style="color: #FF6600; font-weight: bold;">II: </span>Normal, Standard Building</h4>
+                            <h4><span style="color: #FF6600; font-weight: bold;">III: </span>High Schools, Large Occupancy</h4>
+                            <h4><span style="color: #FF6600; font-weight: bold;">IV: </span>Post Essential, Fire Department, Hospital</h4>
                             <h2 class="text-center">Building Codes</h2>
                             <h4>If you know a specific building code that you would like to add, put it in the building code input.</h4>
                             <h4>If you do not know what this is, do not input anything.</h4>
