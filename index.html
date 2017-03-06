@@ -22,7 +22,7 @@
 
 <body>
     <div class="container">
-<!-- ============================================================
+        <!-- ============================================================
 ===============================================================
 ===============================================================
 Navbar
@@ -2405,14 +2405,117 @@ Modals
                                 <h2 class="modal-title">Building Codes</h2>
                             </div>
                             <div class="modal-body">
-                                <h2 class="text-center">Occupancy Categories</h2>
-                            <h4><span style="color: #FF6600; font-weight: bold;">I: </span>Low, Storage, Warehouse, or Agricultural</h4>
-                            <h4><span style="color: #FF6600; font-weight: bold;">II: </span>Normal, Standard Building</h4>
-                            <h4><span style="color: #FF6600; font-weight: bold;">III: </span>High, Large Occupancy, Schools</h4>
-                            <h4><span style="color: #FF6600; font-weight: bold;">IV: </span>Post, Essential (Fire Department, Hospital)</h4>
-                            <h2 class="text-center">Building Codes</h2>
-                            <h4>If you know a specific building code that you would like to add, put it in the building code input.</h4>
-                            <h4>If you do not know what this is, do not input anything.</h4>
+                                <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                <h4>Occupancy Category</h4>
+                                            </th>
+                                            <th class="text-center">
+                                                <h4>Nature of Occupancy</h4>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-toggle="collapse" data-target=".occupancy-1">
+                                            <td>
+                                                <h4><span style="color: #FF6600; font-weight: bold;">I: </span></h4>
+                                            </td>
+                                            <td>
+                                                <h4>Low, Storage, Warehouse, or Agricultural</h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="hiddenRow">
+                                                <div class="collapse occupancy-1">
+                                                    <h4>Buildings and other structures that represent a low hazard to human life in the even of failure, including but not limited to:</h4>
+                                                    <ul>
+                                                        <li>Agricultural facilities</li>
+                                                        <li>Certain temporary Facilities</li>
+                                                        <li>Minor storage facilities</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target=".occupancy-2">
+                                            <td>
+                                                <h4><span style="color: #FF6600; font-weight: bold;">II: </span></h4>
+                                            </td>
+                                            <td>
+                                                <h4>Normal, Standard Building</h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="hiddenRow">
+                                                <div class="collapse occupancy-2">
+                                                    <h4>Buildings and other structures except those listed in Occupancy Categories I, III, and IV</h4>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target=".occupancy-3">
+                                            <td>
+                                                <h4><span style="color: #FF6600; font-weight: bold;">III: </span></h4>
+                                            </td>
+                                            <td>
+                                                <h4>High, Large Occupancy, Schools</h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="hiddenRow">
+                                                <div class="collapse occupancy-3">
+                                                    <h4>Buildings and other structures that represent a substancial hazard to human life in the event of failure, including but not limited to:</h4>
+                                                    <ul>
+                                                        <li>Buildings and other structures whose primary occupancy is public assembly with an occupant load greater than 300.</li>
+                                                        <li>Buildings and other structures containing elementary school, secondary school, or day care facilities with an occupant load greater than 250.</li>
+                                                        <li>Buildings and other structures containg adult education facilities, such as colleges and universities with an occupant load greater than 500.</li>
+                                                        <li>Group I-2 occupancies with an occupant load of 50 or more resident partients but not having surgery or emergency treatment facilities.</li>
+                                                        <li>Group I-3 occupancies.</li>
+                                                        <li>Any other occupancy with an occupant load greater than 5,000.</li>
+                                                        <li>Power-generating stations, water treatment faciliites for potable water, waste water treatment facilities, and other public utility facilities not included in Occupancy Category IV.</li>
+                                                        <li>Buildings and other structures not included in Occupancy Category IV containing sufficient quantities of toxic or explosive substances to be dangerous to the public if released.</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr data-toggle="collapse" data-target=".occupancy-4">
+                                            <td>
+                                                <h4><span style="color: #FF6600; font-weight: bold;">IV: </span></h4>
+                                            </td>
+                                            <td>
+                                                <h4>Post, Essential (Fire Department, Hospital)</h4>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="hiddenRow">
+                                                <div class="collapse occupancy-4">
+                                                    <h4>Buildings and other structures designated as essential facilities, including but not limited to:</h4>
+                                                    <ul>
+                                                        <li>Group I-2 occupancies having surgery or emergency treatment facilities.</li>
+                                                        <li>Fire, rescue, ambulance, and police stations and emergency vehicle garages.</li>
+                                                        <li>Designated earthquake, hurricane, or other emergency shelters.</li>
+                                                        <li>Designated emergency preparedness, communications, operations centers, and other facilities required for emergency response.</li>
+                                                        <li>Power-generating stations and other public utility facilities required as emergency backup facilities for Occupany Category IV structures.</li>
+                                                        <li>Structures containing highly toxic materials as defined by Section 307 where the quantity of the material exceeds the maximum allowable quantities of Table 307.1(2).</li>
+                                                        <li>Aviation control towers, air traffic control centers and emergency aircraft hangars.</li>
+                                                        <li>Buildings and other structures having critical national defense functions.</li>
+                                                        <li>Water storage</li>
+                                                    </ul>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h2 class="text-center">Building Codes</h2>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <h4>If you know a specific building code that you would like to add, put it in the building code input.</h4>
+                                                <h4>If you do not know what this is, do not input anything.</h4>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -2433,8 +2536,7 @@ Modals
                     </div>
                 </div>
             </div>
-
-<!-- ============================================================
+            <!-- ============================================================
 ===============================================================
 ===============================================================
 Submit
@@ -2459,6 +2561,7 @@ Submit
     <script src="js/addRow.js"></script>
     <script src="js/autocomplete.js"></script>
     <script src="js/disable.js"></script>
+    <script src="js/expander.js"></script>
     <script src="js/formValidation.js"></script>
     <script src="js/dropzone.js"></script>
     <script src="js/popover.js"></script>

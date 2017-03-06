@@ -79,6 +79,10 @@ label.btn:last-of-type {
     margin: 0;
 }
 
+.hiddenRow {
+    padding: 0 !important;
+}
+
 .container {
     padding: 0px;
 }
