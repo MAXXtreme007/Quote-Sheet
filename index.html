@@ -246,7 +246,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="l-header">
                         <h3 class="visible-sm visible-md visible-lg">Structure Information</h3>
                         <h3 class="visible-xs">Structure Info</h3>
@@ -280,124 +280,130 @@
                     <div class="col-lg-12 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Dimensions</label>
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="out-to-out-width">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Out-to-Out Width
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input class="form-control req" name="Out-to-Out Width Feet" data-type="number" type="text" placeholder="Feet" required />
-                                                    <span class="input-group-addon req">ft</span>
-                                                    <input class="form-control req" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" required />
-                                                    <span class="input-group-addon req">in</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="col-md-4 stretch">
+                                <div class="col-sm-12 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="out-to-out-width">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Out-to-Out Width
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control req" name="Out-to-Out Width Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                        <span class="input-group-addon req">ft</span>
+                                                        <input class="form-control req" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" required />
+                                                        <span class="input-group-addon req">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-12 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="out-to-out-length">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Out-to-Out Length
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control req" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control req" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" required />
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="out-to-out-length">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Out-to-Out Length
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input class="form-control req" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" required />
-                                                    <span class="input-group-addon">ft</span>
-                                                    <input class="form-control req" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" required />
-                                                    <span class="input-group-addon">in</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="col-md-4 stretch">
+                                <div class="col-sm-12 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Sidewall Eave Height FSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control req" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control req" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" required />
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-sm-12 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Sidewall Eave Height BSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control req" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input class="form-control req" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" required />
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Sidewall Eave Height FSW
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input class="form-control req" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" required />
-                                                    <span class="input-group-addon">ft</span>
-                                                    <input class="form-control req" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" required />
-                                                    <span class="input-group-addon">in</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Sidewall Eave Height BSW
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input class="form-control req" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" required />
-                                                    <span class="input-group-addon">ft</span>
-                                                    <input class="form-control req" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" required />
-                                                    <span class="input-group-addon">in</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-xs-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="bay-spacing">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-center">
-                                                Bay Spacing Sidewall/Frame
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="input-group">
-                                                    <input class="form-control" name="Bay Spacing Sidewalls" data-type="number" type="text" placeholder="# Bays" />
-                                                    <span class="input-group-addon">@</span>
-                                                    <input class="form-control" name="Bay Spacing Length" data-type="number" type="text" placeholder="Length" />
-                                                    <span class="input-group-addon">ft</span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="col-md-4 stretch">
+                                <div class="col-xs-12 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="bay-spacing">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    Bay Spacing Sidewall/Frame
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input class="form-control" name="Bay Spacing Sidewalls" data-type="number" type="text" placeholder="# Bays" />
+                                                        <span class="input-group-addon">@</span>
+                                                        <input class="form-control" name="Bay Spacing Length" data-type="number" type="text" placeholder="Length" />
+                                                        <span class="input-group-addon">ft</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 stretch">
+                    <div class="col-md-8 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Remove Sheeting/Girts</label>
                             <div class="col-sm-3 stretch">
@@ -502,7 +508,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Future Expansion</label>
                             <div class="col-sm-6 stretch">
@@ -557,7 +563,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Cables</label>
                             <div class="col-md-6 stretch">
@@ -612,7 +618,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Wind Column</label>
                             <div class="col-md-6 stretch">
@@ -667,7 +673,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Portal Frame</label>
                             <div class="col-md-6 stretch">
@@ -722,7 +728,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 stretch">
+                    <div class="col-md-6 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Roof</label>
                             <div class="col-lg-8 stretch">
@@ -773,11 +779,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-12 stretch">
+                    <div class="col-md-6 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Overhang</label>
                             <div class="col-md-12 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="overhang">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-4 text-center">
+                                                Eave Extensions
+                                            </th>
+                                        </tr>
+                                    </thead>
                                     <tbody>
                                         <tr>
                                             <td>
@@ -944,12 +957,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="l-header">
                         <h3 class="visible-sm visible-md visible-lg">Panel Information</h3>
                         <h3 class="visible-xs">Panel Info</h3>
                     </div>
-                    <div class="col-md-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Roof Panel Type</label>
                             <div class="col-md-12 stretch">
@@ -972,7 +985,53 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 stretch">
+                    <div class="col-md-4 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Panel Notch</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Panel Notch" id="panel-notch" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Panel Notch" id="panel-notch" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Gutter</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Gutter" id="gutter" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Gutter" id="gutter" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Roof Panel Color</label>
                             <div class="col-md-12 stretch">
@@ -995,7 +1054,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Wall Panel Color</label>
                             <div class="col-md-12 stretch">
@@ -1018,7 +1077,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 stretch">
+                    <div class="col-md-4 stretch">
                         <div class="form-group">
                             <label class="s-header table-header">Trim Color</label>
                             <div class="col-md-12 stretch">
@@ -1043,204 +1102,12 @@
                     </div>
                     <div class="col-md-6 stretch">
                         <div class="form-group">
-                            <label class="s-header table-header">Panel Notch</label>
-                            <div class="col-md-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Panel Notch" id="panel-notch" autocomplete="off" value="No">No
-                                                    </label>
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Panel Notch" id="panel-notch" autocomplete="off" value="Yes">Yes
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 stretch">
-                        <div class="form-group">
-                            <label class="s-header table-header">Gutter</label>
-                            <div class="col-md-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="trim-color">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Gutter" id="gutter" autocomplete="off" value="No">No
-                                                    </label>
-                                                    <label class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Gutter" id="gutter" autocomplete="off" value="Yes">Yes
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 stretch">
-                        <div class="form-group">
-                            <label class="s-header table-header">Wainscot</label>
-                            <div class="col-md-12 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="wainscot">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="btn-group-inline" data-toggle="buttons">
-                                                    <label id="wainscot-no" class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Wainscot" id="wainscot-no" autocomplete="off" value="No">No
-                                                    </label>
-                                                    <label id="wainscot-yes" class="btn btn-default col-xs-6">
-                                                        <input type="radio" name="Wainscot" id="wainscot-yes" autocomplete="off" value="Yes">Yes
-                                                    </label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div id="wainscot-all" class="col-md-12 stretch hide">
-                                <table class="table table-bordered table-hover table-responsive" id="wainscot-apply-all">
-                                    <thead>
-                                        <tr>
-                                            <th class="col-sm-8 text-center">
-                                                Wainscot Height
-                                            </th>
-                                            <th class="col-sm-4 text-center">
-                                                Apply to All Walls
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="col-sm-9">
-                                                <div class="input-group">
-                                                    <input id="wainscot-all-ft" class="form-control" name="Wainscot Height Feet" data-type="number" type="text" placeholder="Feet">
-                                                    <span class="input-group-addon">ft</span>
-                                                    <input id="wainscot-all-in" class="form-control" name="Wainscot Height Inches" data-type="number" type="text" placeholder="Inches">
-                                                    <span class="input-group-addon">in</span>
-                                                </div>
-                                            </td>
-                                            <td class="col-sm-3">
-                                                <input id="wainscot-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Wainscot All Toggle" data-type="bool" type="checkbox" checked="checked">
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div id="wainscot-walls" class="row">
-                                <div class="col-md-6 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-lew">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    LEW
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input id="wainscot-lew-ft" class="form-control" name="Wainscot LEW Feet" data-type="number" type="text" placeholder="Feet">
-                                                        <span class="input-group-addon">ft</span>
-                                                        <input id="wainscot-lew-in" class="form-control" name="Wainscot LEW Inches" data-type="number" type="text" placeholder="Inches">
-                                                        <span class="input-group-addon">in</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-6 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-rew">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    REW
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input id="wainscot-rew-ft" class="form-control" name="Wainscot REW Feet" data-type="number" type="text" placeholder="Feet">
-                                                        <span class="input-group-addon">ft</span>
-                                                        <input id="wainscot-rew-in" class="form-control" name="Wainscot REW Inches" data-type="number" type="text" placeholder="Inches">
-                                                        <span class="input-group-addon">in</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-6 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-fsw">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    FSW
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input id="wainscot-fsw-ft" class="form-control" name="Wainscot FSW Feet" data-type="number" type="text" placeholder="Feet">
-                                                        <span class="input-group-addon">ft</span>
-                                                        <input id="wainscot-fsw-in" class="form-control" name="Wainscot FSW Inches" data-type="number" type="text" placeholder="Inches">
-                                                        <span class="input-group-addon">in</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <div class="col-md-6 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-bsw">
-                                        <thead>
-                                            <tr>
-                                                <th class="text-center">
-                                                    BSW
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="input-group">
-                                                        <input id="wainscot-bsw-ft" class="form-control" name="Wainscot BSW Feet" data-type="number" type="text" placeholder="Feet">
-                                                        <span class="input-group-addon">ft</span>
-                                                        <input id="wainscot-bsw-in" class="form-control" name="Wainscot BSW Inches" data-type="number" type="text" placeholder="Inches">
-                                                        <span class="input-group-addon">in</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 stretch">
-                        <div class="form-group">
                             <label class="s-header table-header">Liner</label>
                             <div class="col-md-12 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="liner">
                                     <thead>
                                         <tr>
-                                            <th class="col-sm-8 text-center">
+                                            <th class="text-center">
                                                 Walls
                                             </th>
                                         </tr>
@@ -1417,359 +1284,521 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="l-header text-center">
-                            <label>Framed Openings</label>
+                    <div class="col-md-6 stretch">
+                        <div class="form-group">
+                            <label class="s-header table-header">Wainscot</label>
+                            <div class="col-md-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wainscot">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label id="wainscot-no" class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wainscot" id="wainscot-no" autocomplete="off" value="No">No
+                                                    </label>
+                                                    <label id="wainscot-yes" class="btn btn-default col-xs-6">
+                                                        <input type="radio" name="Wainscot" id="wainscot-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="wainscot-all" class="col-md-12 stretch hide">
+                                <table class="table table-bordered table-hover table-responsive" id="wainscot-apply-all">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-sm-8 text-center">
+                                                Wainscot Height
+                                            </th>
+                                            <th class="col-sm-4 text-center">
+                                                Apply to All Walls
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-sm-9">
+                                                <div class="input-group">
+                                                    <input id="wainscot-all-ft" class="form-control" name="Wainscot Height Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <span class="input-group-addon">ft</span>
+                                                    <input id="wainscot-all-in" class="form-control" name="Wainscot Height Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <span class="input-group-addon">in</span>
+                                                </div>
+                                            </td>
+                                            <td class="col-sm-3">
+                                                <input id="wainscot-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Wainscot All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div id="wainscot-walls" class="row">
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-lew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    LEW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-lew-ft" class="form-control" name="Wainscot LEW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-lew-in" class="form-control" name="Wainscot LEW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-rew">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    REW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-rew-ft" class="form-control" name="Wainscot REW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-rew-in" class="form-control" name="Wainscot REW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-fsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    FSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-fsw-ft" class="form-control" name="Wainscot FSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-fsw-in" class="form-control" name="Wainscot FSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-md-6 stretch">
+                                    <table class="table table-bordered table-hover table-responsive" id="wainscot-bsw">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center">
+                                                    BSW
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-group">
+                                                        <input id="wainscot-bsw-ft" class="form-control" name="Wainscot BSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                        <span class="input-group-addon">ft</span>
+                                                        <input id="wainscot-bsw-in" class="form-control" name="Wainscot BSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                        <span class="input-group-addon">in</span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center table-header">
-                            <label class="s-header table-header">Left End Wall</label>
-                        </div>
+                <div class="col-md-12">
+                        <div class="l-header">
+                        <h3 class="visible-sm visible-md visible-lg">Framed Openings</h3>
+                        <h3 class="visible-xs">Framed Openings</h3>
                     </div>
-                    <div class="col-md-10">
-                        <div class="col-sm-2 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-qty">
+                        <div class="col-md-12 stretch">
+                            <div class="text-center table-header">
+                                <label class="s-header table-header">Left End Wall</label>
+                            </div>
+                        </div>
+                        <div class="col-md-10 stretch">
+                            <div class="col-sm-2 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-lew-qty">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Quantity
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-lew-qty0'>
+                                            <td>
+                                                <input class="form-control" name="Framed Openings LEW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-lew-qty1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-lew-w">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Width
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-lew-w0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings LEW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings LEW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-lew-w1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-lew-h">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Height
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-lew-h0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings LEW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings LEW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-lew-h1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="btn-group-vertical" role="group" aria-label="...">
+                                <a id="add_row_fo_lew" class="btn btn-success">Add LEW FO</a>
+                                <a id='delete_row_fo_lew' class="btn btn-danger">Delete LEW FO</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 stretch">
+                            <div class="text-center table-header">
+                                <label class="s-header table-header">Right End Wall</label>
+                            </div>
+                        </div>
+                        <div class="col-md-10 stretch">
+                            <div class="col-sm-2 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-rew-qty">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Quantity
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-rew-qty0'>
+                                            <td>
+                                                <input class="form-control" name="Framed Openings REW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-rew-qty1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-rew-w">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Width
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-rew-w0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings REW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings REW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-rew-w1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-rew-h">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Height
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-rew-h0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings REW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings REW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-rew-h1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="btn-group-vertical" role="group" aria-label="...">
+                                <a id="add_row_fo_rew" class="btn btn-success">Add REW FO</a>
+                                <a id='delete_row_fo_rew' class="btn btn-danger">Delete REW FO</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 stretch">
+                            <div class="text-center table-header">
+                                <label class="s-header table-header">Front Side Wall</label>
+                            </div>
+                        </div>
+                        <div class="col-md-10 stretch">
+                            <div class="col-sm-2 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-fsw-qty">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Quantity
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-fsw-qty0'>
+                                            <td>
+                                                <input class="form-control" name="Framed Openings FSW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-fsw-qty1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-fsw-w">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Width
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-fsw-w0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings FSW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings FSW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-fsw-w1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-fsw-h">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Height
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-fsw-h0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings FSW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings FSW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-fsw-h1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="btn-group-vertical" role="group" aria-label="...">
+                                <a id="add_row_fo_fsw" class="btn btn-success">Add FSW FO</a>
+                                <a id='delete_row_fo_fsw' class="btn btn-danger">Delete FSW FO</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 stretch">
+                            <div class="text-center table-header">
+                                <label class="s-header table-header">Back Side Wall</label>
+                            </div>
+                        </div>
+                        <div class="col-md-10 stretch">
+                            <div class="col-sm-2 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-bsw-qty">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Quantity
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-bsw-qty0'>
+                                            <td>
+                                                <input class="form-control" name="Framed Openings BSW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-bsw-qty1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-bsw-w">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Width
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-bsw-w0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings BSW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings BSW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-bsw-w1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-sm-5 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-bsw-h">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">
+                                                Height
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr id='addr-fo-bsw-h0'>
+                                            <td>
+                                                <div class="input-group">
+                                                    <input class="form-control" name="Framed Openings BSW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                    <input class="form-control" name="Framed Openings BSW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            </td>
+                                        </tr>
+                                        <tr id='addr-fo-bsw-h1'></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="btn-group-vertical" role="group" aria-label="...">
+                                <a id="add_row_fo_bsw" class="btn btn-success">Add BSW FO</a>
+                                <a id='delete_row_fo_bsw' class="btn btn-danger">Delete BSW FO</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 stretch">
+                            <div class="text-center table-header">
+                                <label class="s-header table-header">Walk Doors</label>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo_bsw">
                                 <thead>
                                     <tr>
                                         <th class="text-center">
-                                            Quantity
+                                            CSM 3070
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr id='addr-fo-lew-qty0'>
+                                    <tr>
                                         <td>
-                                            <input class="form-control" name="Framed Openings LEW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                            <input class="form-control" name="CSM Walk Doors 3070" data-type="number" type="text" placeholder="Qty" />
                                         </td>
                                     </tr>
-                                    <tr id='addr-fo-lew-qty1'></tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-w">
+                        <div class="col-sm-4 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo_bsw">
                                 <thead>
                                     <tr>
                                         <th class="text-center">
-                                            Width
+                                            CSM 4070
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr id='addr-fo-lew-w0'>
+                                    <tr>
                                         <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings LEW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings LEW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            <input class="form-control" name="CSM Walk Doors 4070" data-type="number" type="text" placeholder="Qty" />
                                         </td>
                                     </tr>
-                                    <tr id='addr-fo-lew-w1'></tr>
                                 </tbody>
                             </table>
                         </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-h">
+                        <div class="col-sm-4 stretch">
+                            <table class="table table-bordered table-hover table-responsive" id="fo_bsw">
                                 <thead>
                                     <tr>
                                         <th class="text-center">
-                                            Height
+                                            CSM 6070
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr id='addr-fo-lew-h0'>
+                                    <tr>
                                         <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings LEW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings LEW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                            <input class="form-control" name="CSM Walk Doors 6070" data-type="number" type="text" placeholder="Qty" />
                                         </td>
                                     </tr>
-                                    <tr id='addr-fo-lew-h1'></tr>
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
-                            <a id="add_row_fo_lew" class="btn btn-success">Add Row</a>
-                            <a id='delete_row_fo_lew' class="btn btn-danger">Delete Row</a>
-                        </div>
-                    </div>
                 </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center table-header">
-                            <label class="s-header table-header">Right End Wall</label>
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="col-sm-2 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-rew-qty">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Quantity
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-rew-qty0'>
-                                        <td>
-                                            <input class="form-control" name="Framed Openings REW Quantity" data-type="number" type="number" placeholder="Qty" />
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-rew-qty1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-rew-w">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Width
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-rew-w0'>
-                                        <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings REW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings REW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-rew-w1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-rew-h">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Height
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-rew-h0'>
-                                        <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings REW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings REW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-rew-h1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
-                            <a id="add_row_fo_rew" class="btn btn-success">Add Row</a>
-                            <a id='delete_row_fo_rew' class="btn btn-danger">Delete Row</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center table-header">
-                            <label class="s-header table-header">Front Side Wall</label>
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="col-sm-2 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-fsw-qty">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Quantity
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-fsw-qty0'>
-                                        <td>
-                                            <input class="form-control" name="Framed Openings FSW Quantity" data-type="number" type="number" placeholder="Qty" />
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-fsw-qty1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-fsw-w">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Width
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-fsw-w0'>
-                                        <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings FSW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings FSW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-fsw-w1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-fsw-h">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Height
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-fsw-h0'>
-                                        <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings FSW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings FSW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-fsw-h1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
-                            <a id="add_row_fo_fsw" class="btn btn-success">Add Row</a>
-                            <a id='delete_row_fo_fsw' class="btn btn-danger">Delete Row</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center table-header">
-                            <label class="s-header table-header">Back Side Wall</label>
-                        </div>
-                    </div>
-                    <div class="col-md-10">
-                        <div class="col-sm-2 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-bsw-qty">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Quantity
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-bsw-qty0'>
-                                        <td>
-                                            <input class="form-control" name="Framed Openings BSW Quantity" data-type="number" type="number" placeholder="Qty" />
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-bsw-qty1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-bsw-w">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Width
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-bsw-w0'>
-                                        <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings BSW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings BSW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-bsw-w1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-bsw-h">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            Height
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr id='addr-fo-bsw-h0'>
-                                        <td>
-                                            <div class="input-group">
-                                                <input class="form-control" name="Framed Openings BSW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                                <input class="form-control" name="Framed Openings BSW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                        </td>
-                                    </tr>
-                                    <tr id='addr-fo-bsw-h1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
-                            <a id="add_row_fo_bsw" class="btn btn-success">Add Row</a>
-                            <a id='delete_row_fo_bsw' class="btn btn-danger">Delete Row</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="text-center table-header">
-                            <label class="s-header table-header">Walk Doors</label>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <table class="table table-bordered table-hover table-responsive" id="fo_bsw">
-                            <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        CSM 3070
-                                    </th>
-                                    <th class="text-center">
-                                        CSM 4070
-                                    </th>
-                                    <th class="text-center">
-                                        CSM 6070
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <input class="form-control" name="CSM Walk Doors 3070" data-type="number" type="text" placeholder="Qty" />
-                                    </td>
-                                    <td>
-                                        <input class="form-control" name="CSM Walk Doors 4070" data-type="number" type="text" placeholder="Qty" />
-                                    </td>
-                                    <td>
-                                        <input class="form-control" name="CSM Walk Doors 6070" data-type="number" type="text" placeholder="Qty" />
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6">
                     <div class="l-header">
                         <h3 class="visible-sm visible-md visible-lg">Building Specifications</h3>
@@ -2161,8 +2190,8 @@
                             <h2 class="text-center">Load Categories</h2>
                             <h4><span style="color: #FF6600; font-weight: bold;">I: </span>Low, Storage, Warehouse, or Agricultural</h4>
                             <h4><span style="color: #FF6600; font-weight: bold;">II: </span>Normal, Standard Building</h4>
-                            <h4><span style="color: #FF6600; font-weight: bold;">III: </span>High Schools, Large Occupancy</h4>
-                            <h4><span style="color: #FF6600; font-weight: bold;">IV: </span>Post Essential, Fire Department, Hospital</h4>
+                            <h4><span style="color: #FF6600; font-weight: bold;">III: </span>High, Large Occupancy, Schools</h4>
+                            <h4><span style="color: #FF6600; font-weight: bold;">IV: </span>Post, Essential (Fire Department, Hospital)</h4>
                             <h2 class="text-center">Building Codes</h2>
                             <h4>If you know a specific building code that you would like to add, put it in the building code input.</h4>
                             <h4>If you do not know what this is, do not input anything.</h4>
