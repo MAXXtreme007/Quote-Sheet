@@ -81,6 +81,7 @@ label.btn:last-of-type {
 
 .hiddenRow {
     padding: 0 !important;
+    height: 0px;
 }
 
 .container {
