@@ -94,12 +94,20 @@ Insulation
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#insulation-walls').removeClass('hide');
+            $('#heated').removeClass('col-md-12');
+            $('#heated').addClass('col-md-8');
+            $('#insulation-provided').removeClass('hidden');
         }
     });
     $('#insulation-foam').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#insulation-walls').removeClass('hide');
+            $('#heated').removeClass('col-md-8');
+            $('#heated').addClass('col-md-12');
+            $('#insulation-provided').addClass('hidden');
+        } else {
+            $('#insulation-provided').removeClass('hidden');
         }
     });
 });

@@ -60,6 +60,10 @@ body {
         padding: 10px 0;
     }
     
+    .hidden {
+        display: none;
+    }
+
     .row {
         display: inline-block;
         width: 100%;
