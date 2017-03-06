@@ -1,30 +1,50 @@
 $(document).ready(function() {
-/* ==================================================
-Overhang
-================================================== */
+
+    /* ==================================================
+    Bay Spacing
+    ================================================== */
+
+    $(function() {
+        $("#bay-spacing-note").click(function () {
+            $("#bay-spacing-note-p").fadeOut(function () {
+                $("#bay-spacing-note-p").text(($("#bay-spacing-note-p").text() == 'Fold it') ? 'Expand it' : 'Fold it').fadeIn();
+            })
+        });
+    });
+
+    /* ==================================================
+    Overhang
+    ================================================== */
 
     $('#overhang-walls-toggle').change(function() {
         $('#overhang-walls').toggle();
         $('#overhang-all-ft').attr('disabled', !this.checked);
         $('#overhang-all-in').attr('disabled', !this.checked);
+        $('#soffit-all').prop("disabled", !this.checked);
     });
 
     $('#overhang-no').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#overhang-all').addClass('hide');
+            if ($(!this.checked)) {
+                $('#overhang-walls').addClass('hide');
+            }
         }
     });
     $('#overhang-yes').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#overhang-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#overhang-walls').removeClass('hide');
+            }
         }
     });
 
-/* ==================================================
-Wainscot
-================================================== */
+    /* ==================================================
+    Wainscot
+    ================================================== */
 
     $('#wainscot-walls-toggle').change(function() {
         $('#wainscot-walls').toggle();
@@ -36,53 +56,72 @@ Wainscot
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#wainscot-all').addClass('hide');
+            if ($(!this.checked)) {
+                $('#wainscot-walls').addClass('hide');
+            }
         }
     });
     $('#wainscot-yes').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#wainscot-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#wainscot-walls').removeClass('hide');
+            }
         }
     });
 
-/* ==================================================
-   Liner
-================================================== */
+    /* ==================================================
+       Liner
+    ================================================== */
 
     $('#liner-walls-toggle').change(function() {
         $('#liner-walls').toggle();
         $('#liner-all-ft').attr('disabled', !this.checked);
         $('#liner-all-in').attr('disabled', !this.checked);
+        $('#liner-full-height-toggle').prop("disabled", !this.checked);
     });
 
     $('#liner-panel-no').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').addClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').addClass('hide');
+            }
         }
     });
     $('#liner-panel-mloc').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').removeClass('hide');
+            }
         }
     });
     $('#liner-panel-ploc').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').removeClass('hide');
+            }
         }
     });
     $('#liner-panel-rloc').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').removeClass('hide');
+            }
         }
     });
 
-/* ==================================================
-Insulation
-================================================== */
+    /* ==================================================
+    Insulation
+    ================================================== */
 
     $('#insulation-none').on('click', function() {
         $(this).addClass('active');
