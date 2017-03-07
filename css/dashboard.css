@@ -300,8 +300,8 @@ h1
     .nav>a {
         padding: 10px;
     }
-    .collapse {
+    /*.collapse {
         min-height: 330px;
-    }
+    }*/
 }
 

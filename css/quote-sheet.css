@@ -82,6 +82,13 @@ label.btn:last-of-type {
 .hiddenRow {
     padding: 0 !important;
     height: 0px;
+    text-align: left;
+}
+.hiddenRow>div>h4 {
+    text-align: justify;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FF6600;
 }
 
 .container {
