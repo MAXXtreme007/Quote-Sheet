@@ -5,8 +5,8 @@ $(document).ready(function() {
     ================================================== */
 
     $(function() {
-        $("#bay-spacing-note").click(function () {
-            $("#bay-spacing-note-p").fadeOut(function () {
+        $("#bay-spacing-note").click(function() {
+            $("#bay-spacing-note-p").fadeOut(function() {
                 $("#bay-spacing-note-p").text(($("#bay-spacing-note-p").text() == 'Fold it') ? 'Expand it' : 'Fold it').fadeIn();
             })
         });
@@ -17,7 +17,11 @@ $(document).ready(function() {
     ================================================== */
 
     $('#overhang-walls-toggle').change(function() {
-        $('#overhang-walls').toggle();
+        if( $("#overhang-walls").css('display') == 'none') {
+            $('#overhang-walls').css('display', 'table');
+        } else {
+            $('#overhang-walls').css('display', 'none');
+        }
         $('#overhang-all-ft').attr('disabled', !this.checked);
         $('#overhang-all-in').attr('disabled', !this.checked);
         $('#soffit-all').prop("disabled", !this.checked);
@@ -47,7 +51,11 @@ $(document).ready(function() {
     ================================================== */
 
     $('#wainscot-walls-toggle').change(function() {
-        $('#wainscot-walls').toggle();
+        if( $("#wainscot-walls").css('display') == 'none') {
+            $('#wainscot-walls').css('display', 'table');
+        } else {
+            $('#wainscot-walls').css('display', 'none');
+        }
         $('#wainscot-all-ft').attr('disabled', !this.checked);
         $('#wainscot-all-in').attr('disabled', !this.checked);
     });
@@ -76,7 +84,11 @@ $(document).ready(function() {
     ================================================== */
 
     $('#liner-walls-toggle').change(function() {
-        $('#liner-walls').toggle();
+        if( $("#liner-walls").css('display') == 'none') {
+            $('#liner-walls').css('display', 'table');
+        } else {
+            $('#liner-walls').css('display', 'none');
+        }
         $('#liner-all-ft').attr('disabled', !this.checked);
         $('#liner-all-in').attr('disabled', !this.checked);
         $('#liner-full-height-toggle').prop("disabled", !this.checked);
@@ -133,8 +145,8 @@ $(document).ready(function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#insulation-walls').removeClass('hide');
-            $('#heated').removeClass('col-md-12');
-            $('#heated').addClass('col-md-8');
+            $('#heated').removeClass('col-sm-12');
+            $('#heated').addClass('col-sm-8');
             $('#insulation-provided').removeClass('hidden');
         }
     });
@@ -142,8 +154,8 @@ $(document).ready(function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#insulation-walls').removeClass('hide');
-            $('#heated').removeClass('col-md-8');
-            $('#heated').addClass('col-md-12');
+            $('#heated').removeClass('col-sm-8');
+            $('#heated').addClass('col-sm-12');
             $('#insulation-provided').addClass('hidden');
         } else {
             $('#insulation-provided').removeClass('hidden');
