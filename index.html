@@ -285,7 +285,9 @@
                     <div class="form-group">
                         <label class="s-header table-header">Dimensions</label>
                         <div class="row">
+                            <!-- ========================================Out-to-Out======================================== -->
                             <div class="col-sm-6 col-md-4 stretch">
+                                <!-- ========================================Out-to-Out Width======================================== -->
                                 <div class="col-sm-12 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="out-to-out-width">
                                         <thead>
@@ -309,6 +311,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Out-to-Out Length======================================== -->
                                 <div class="col-sm-12 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="out-to-out-length">
                                         <thead>
@@ -333,7 +336,9 @@
                                     </table>
                                 </div>
                             </div>
+                            <!-- ========================================Sidewall Eave Height======================================== -->
                             <div class="col-sm-6 col-md-4 stretch">
+                                <!-- ========================================Sidewall Eave Height FSW======================================== -->
                                 <div class="col-sm-12 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
                                         <thead>
@@ -357,6 +362,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Sidewall Eave Height BSW======================================== -->
                                 <div class="col-sm-12 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="sidewall-height-fsw">
                                         <thead>
@@ -381,9 +387,11 @@
                                     </table>
                                 </div>
                             </div>
+                            <!-- ========================================Bay Spacing======================================== -->
                             <div class="col-sm-12 col-md-4 stretch">
+                                <!-- ========================================Bay Spacing Warning Button======================================== -->
                                 <div class="col-xs-12 stretch">
-                                    <table class="table table-bordered table-hover table-responsive" id="bay-spacing">
+                                    <table class="table table-bordered table-hover table-responsive" id="bay-spacing-info">
                                         <thead>
                                         <tr>
                                             <th class="text-center">
@@ -395,13 +403,14 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#bay-spacing-info"><span>Please read before adding Bay Spacing</span></a>
+                                                    <a class="btn btn-warning" data-toggle="modal" data-target="#bay-spacing-warning"><span>Please read before adding Bay Spacing</span></a>
                                                 </div>
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Bay Spacing Sidewall/Frame======================================== -->
                                 <div class="col-xs-12 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="bay-spacing">
                                         <thead>
@@ -595,11 +604,24 @@
                         </div>
                     </div>
                 </div>
-                <!-- ========================================Cables======================================== -->
-                <div class="col-md-4 stretch">
+                <!-- ========================================Wind Framing======================================== -->
+                <div class="col-md-12 stretch">
                     <div class="form-group">
-                        <label class="s-header table-header">Cables</label>
+                        <label class="s-header table-header">Wind Framing</label>
                         <div class="row">
+                            <div class="col-sm-12 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="wind-framing-info">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="input-group">
+                                                <a class="btn btn-warning" data-toggle="modal" data-target="#wind-framing-warning"><span>Please read before adding Wind Framing</span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <div class="col-sm-6 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="cables">
                                     <thead>
@@ -613,11 +635,14 @@
                                     <tr>
                                         <td>
                                             <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Cables FSW No" id="cable-fsw-no" autocomplete="off" value="No">No
+                                                <label class="btn btn-default col-xs-4">
+                                                    <input type="radio" name="FSW Cables" id="fsw-cables" autocomplete="off" value="Cables">Cables
                                                 </label>
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Cables FSW Yes" id="cable-fsw-yes" autocomplete="off" value="Yes">Yes
+                                                <label class="btn btn-default col-xs-4">
+                                                    <input type="radio" name="FSW Wind Column" id="fsw-wind-column" autocomplete="off" value="Wind Column">Wind Column
+                                                </label>
+                                                <label class="btn btn-default col-xs-4">
+                                                    <input type="radio" name="FSW Portal Frame" id="fsw-portal-frame" autocomplete="off" value="Portal Frame">Portal Frame
                                                 </label>
                                             </div>
                                         </td>
@@ -638,127 +663,14 @@
                                     <tr>
                                         <td>
                                             <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Cables BSW No" id="cable-bsw-no" autocomplete="off" value="No">No
+                                                <label class="btn btn-default col-xs-4">
+                                                    <input type="radio" name="BSW Cables" id="bsw-cables" autocomplete="off" value="Cables">Cables
                                                 </label>
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Cables BSW Yes" id="cable-bsw-yes" autocomplete="off" value="Yes">Yes
+                                                <label class="btn btn-default col-xs-4">
+                                                    <input type="radio" name="BSW Wind Column" id="bsw-wind-column" autocomplete="off" value="Wind Column">Wind Column
                                                 </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ========================================Wind Column======================================== -->
-                <div class="col-md-4 stretch">
-                    <div class="form-group">
-                        <label class="s-header table-header">Wind Column</label>
-                        <div class="row">
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="wind-column">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            FSW
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Wind Column FSW No" id="wind-column-fsw-no" autocomplete="off" value="No">No
-                                                </label>
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Wind Column FSW Yes" id="wind-column-fsw-yes" autocomplete="off" value="Yes">Yes
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="wind-column">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            BSW
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Wind Column BSW No" id="wind-column-bsw-no" autocomplete="off" value="No">No
-                                                </label>
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Wind Column BSW Yes" id="wind-column-bsw-yes" autocomplete="off" value="Yes">Yes
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- ========================================Portal Frame======================================== -->
-                <div class="col-md-4 stretch">
-                    <div class="form-group">
-                        <label class="s-header table-header">Portal Frame</label>
-                        <div class="row">
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="portal-frame">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            FSW
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Portal Frame FSW No" id="portal-frame-fsw-no" autocomplete="off" value="No">No
-                                                </label>
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Portal Frame FSW Yes" id="portal-frame-fsw-yes" autocomplete="off" value="Yes">Yes
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-sm-6 stretch">
-                                <table class="table table-bordered table-hover table-responsive" id="portal-frame">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">
-                                            BSW
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Portal Frame BSW No" id="portal-frame-bsw-no" autocomplete="off" value="No">No
-                                                </label>
-                                                <label class="btn btn-default col-xs-6">
-                                                    <input type="radio" name="Portal Frame BSW Yes" id="portal-frame-bsw-yes" autocomplete="off" value="Yes">Yes
+                                                <label class="btn btn-default col-xs-4">
+                                                    <input type="radio" name="BSW Portal Frame" id="bsw-portal-frame" autocomplete="off" value="Portal Frame">Portal Frame
                                                 </label>
                                             </div>
                                         </td>
@@ -2578,7 +2490,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="bay-spacing-info" tabindex="-1" role="dialog" aria-labelledby="Bay Spacing" aria-hidden="true">
+            <div class="modal fade" id="bay-spacing-warning" tabindex="-1" role="dialog" aria-labelledby="Bay Spacing" aria-hidden="true">
                 <div class="vertical-alignment-helper">
                     <div class="modal-dialog vertical-align-center">
                         <div class="modal-content">
@@ -2588,6 +2500,21 @@
                             </div>
                             <div class="modal-body">
                                 <h4>In most situations, it is best to let us determine the bay spacing to ensure optimal cost and build quality. If there is a specific reason you would still like to specify bay spacing, procede in filling it out; otherwise, please leave it blank.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="wind-framing-warning" tabindex="-1" role="dialog" aria-labelledby="Bay Spacing" aria-hidden="true">
+                <div class="vertical-alignment-helper">
+                    <div class="modal-dialog vertical-align-center">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button class="close" data-dismiss="modal">x</button>
+                                <h2 class="modal-title">Wind Framing</h2>
+                            </div>
+                            <div class="modal-body">
+                                <h4>In most situations, it is best to let us determine the wind framing to ensure optimal cost and build quality. If there is a specific reason you would still like to specify wind framing, procede in filling it out; otherwise, please leave it blank.</h4>
                             </div>
                         </div>
                     </div>
