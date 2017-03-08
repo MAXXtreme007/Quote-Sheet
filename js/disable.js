@@ -38,6 +38,7 @@ $(document).ready(function() {
         }
     });
     // Disable soffit for all walls until overhang length is specified
+    $('#soffit-all').prop('disabled',true);
     $('#overhang-all-ft, #overhang-all-in').on('input', function(){
         if($('#overhang-all-ft').val() || $('#overhang-all-in').val())
             $('#soffit-all').attr('disabled', false);
@@ -61,6 +62,10 @@ $(document).ready(function() {
     });
 
     // Disable soffit for specific walls until overhang length is specified
+    $('#soffit-lew').prop('disabled',true);
+    $('#soffit-rew').prop('disabled',true);
+    $('#soffit-fsw').prop('disabled',true);
+    $('#soffit-bsw').prop('disabled',true);
     $('#overhang-lew-ft, #overhang-lew-in').on('input', function(){
         if($('#overhang-lew-ft').val() || $('#overhang-lew-in').val())
             $('#soffit-lew').attr('disabled', false);
