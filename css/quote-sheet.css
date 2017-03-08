@@ -133,6 +133,17 @@ label.btn:last-of-type {
     padding: 10px 0;
 }
 
+.add-row {
+    padding: 0 0 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    /*Remove padding on phones to make buttons fill screen*/
+    .add-row {
+        padding: 0px;
+    }
+}
+
 .hidden {
     display: none;
 }

@@ -1202,6 +1202,7 @@
                 <div class="col-md-6 stretch">
                     <div class="form-group">
                         <label class="s-header table-header">Liner</label>
+                        <!-- ========================================Wall Liner======================================== -->
                         <div class="row">
                             <div class="row col-md-12 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="liner">
@@ -1296,7 +1297,7 @@
                                 </div>
                             </div>
                             <div id="liner-walls" class="row">
-                                <div class="col-md-6 stretch">
+                                <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-lew">
                                         <thead>
                                         <tr>
@@ -1325,7 +1326,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="col-md-6 stretch">
+                                <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-rew">
                                         <thead>
                                         <tr>
@@ -1354,7 +1355,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="col-md-6 stretch">
+                                <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-fsw">
                                         <thead>
                                         <tr>
@@ -1383,7 +1384,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="col-md-6 stretch">
+                                <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-bsw">
                                         <thead>
                                         <tr>
@@ -1414,6 +1415,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- ========================================Roof Liner======================================== -->
                         <div class="row">
                             <div class="col-md-12 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="roof-liner">
@@ -1682,10 +1684,14 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
+                    <div class="col-sm-2 add-row">
+                        <div class="btn-group-vertical visible-xs visible-md visible-lg" role="group" aria-label="...">
                             <a id="add_row_fo_lew" class="btn btn-success">Add LEW FO</a>
                             <a id='delete_row_fo_lew' class="btn btn-danger">Delete LEW FO</a>
+                        </div>
+                        <div class="btn-group-vertical visible-sm" role="group" aria-label="...">
+                            <a id="add_row_fo_lew" class="btn btn-success">Add FO</a>
+                            <a id='delete_row_fo_lew' class="btn btn-danger">Delete FO</a>
                         </div>
                     </div>
                 </div>
@@ -1759,10 +1765,14 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
+                    <div class="col-sm-2 add-row">
+                        <div class="btn-group-vertical visible-xs visible-md visible-lg" role="group" aria-label="...">
                             <a id="add_row_fo_rew" class="btn btn-success">Add REW FO</a>
                             <a id='delete_row_fo_rew' class="btn btn-danger">Delete REW FO</a>
+                        </div>
+                        <div class="btn-group-vertical visible-sm" role="group" aria-label="...">
+                            <a id="add_row_fo_rew" class="btn btn-success">Add FO</a>
+                            <a id='delete_row_fo_rew' class="btn btn-danger">Delete FO</a>
                         </div>
                     </div>
                 </div>
@@ -1836,10 +1846,14 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
+                    <div class="col-sm-2 add-row">
+                        <div class="btn-group-vertical visible-xs visible-md visible-lg" role="group" aria-label="...">
                             <a id="add_row_fo_fsw" class="btn btn-success">Add FSW FO</a>
                             <a id='delete_row_fo_fsw' class="btn btn-danger">Delete FSW FO</a>
+                        </div>
+                        <div class="btn-group-vertical visible-sm" role="group" aria-label="...">
+                            <a id="add_row_fo_fsw" class="btn btn-success">Add FO</a>
+                            <a id='delete_row_fo_fsw' class="btn btn-danger">Delete FO</a>
                         </div>
                     </div>
                 </div>
@@ -1913,10 +1927,14 @@
                             </table>
                         </div>
                     </div>
-                    <div class="col-sm-2">
-                        <div class="btn-group-vertical" role="group" aria-label="...">
+                    <div class="col-sm-2 add-row">
+                        <div class="btn-group-vertical visible-xs visible-md visible-lg" role="group" aria-label="...">
                             <a id="add_row_fo_bsw" class="btn btn-success">Add BSW FO</a>
                             <a id='delete_row_fo_bsw' class="btn btn-danger">Delete BSW FO</a>
+                        </div>
+                        <div class="btn-group-vertical visible-sm" role="group" aria-label="...">
+                            <a id="add_row_fo_bsw" class="btn btn-success">Add FO</a>
+                            <a id='delete_row_fo_bsw' class="btn btn-danger">Delete FO</a>
                         </div>
                     </div>
                 </div>
@@ -1952,7 +1970,7 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input class="form-control" name="CSM Walk Doors 3070" data-type="number" type="text" placeholder="Qty" />
+                                    <input class="form-control" name="CSM Walk Doors 3070" data-type="number" type="text" placeholder="Quantity" />
                                 </td>
                             </tr>
                             </tbody>
@@ -1971,7 +1989,7 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input class="form-control" name="CSM Walk Doors 4070" data-type="number" type="text" placeholder="Qty" />
+                                    <input class="form-control" name="CSM Walk Doors 4070" data-type="number" type="text" placeholder="Quantity" />
                                 </td>
                             </tr>
                             </tbody>
@@ -1990,7 +2008,7 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <input class="form-control" name="CSM Walk Doors 6070" data-type="number" type="text" placeholder="Qty" />
+                                    <input class="form-control" name="CSM Walk Doors 6070" data-type="number" type="text" placeholder="Quantity" />
                                 </td>
                             </tr>
                             </tbody>
