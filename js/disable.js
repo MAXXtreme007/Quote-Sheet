@@ -154,12 +154,9 @@ $(document).ready(function() {
         } else {
             $('#liner-walls').css('display', 'none');
         }
-        if (!this.checked()) {
-            if ($('#liner-full-height-toggle').checked())
-                $('#liner-full-height-toggle, #liner-all-ft, #liner-all-in').prop('disabled', true);
-            else
-                $('#liner-full-height-toggle, #liner-all-ft, #liner-all-in').prop('disabled', false);
-        }
+        $('#liner-full-height-toggle').prop('disabled', !this.checked);
+        if (!$('#liner-full-height-toggle').is(':checked'))
+            $('#liner-all-ft, #liner-all-in').prop('disabled', !this.checked);
     });
 
     // Disable liner height for specific walls if liner full height is selected
