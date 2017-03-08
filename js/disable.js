@@ -16,17 +16,7 @@ $(document).ready(function() {
     Overhang
     ================================================== */
 
-    $('#overhang-walls-toggle').change(function() {
-        if( $("#overhang-walls").css('display') == 'none') {
-            $('#overhang-walls').css('display', 'table');
-        } else {
-            $('#overhang-walls').css('display', 'none');
-        }
-        $('#overhang-all-ft').attr('disabled', !this.checked);
-        $('#overhang-all-in').attr('disabled', !this.checked);
-        $('#soffit-all').prop("disabled", !this.checked);
-    });
-
+    // Disable input for overhang
     $('#overhang-no').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
@@ -36,6 +26,8 @@ $(document).ready(function() {
             }
         }
     });
+
+    // Enable input for overhang
     $('#overhang-yes').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
@@ -44,6 +36,54 @@ $(document).ready(function() {
                 $('#overhang-walls').removeClass('hide');
             }
         }
+    });
+    // Disable soffit for all walls until overhang length is specified
+    $('#overhang-all-ft, #overhang-all-in').on('input', function(){
+        if($('#overhang-all-ft').val() || $('#overhang-all-in').val())
+            $('#soffit-all').attr('disabled', false);
+        else
+            $('#soffit-all').attr('disabled',true);
+    });
+
+    // Apply to all walls
+    $('#overhang-walls-toggle').change(function() {
+        if( $('#overhang-walls').css('display') == 'none') {
+            $('#overhang-walls').css('display', 'table');
+        } else {
+            $('#overhang-walls').css('display', 'none');
+        }
+        $('#overhang-all-ft').attr('disabled', !this.checked);
+        $('#overhang-all-in').attr('disabled', !this.checked);
+        if(($('#overhang-all-ft').val() || $('#overhang-all-in').val()) && this.checked)
+            $('#soffit-all').attr('disabled', false);
+        else
+            $('#soffit-all').attr('disabled',true);
+    });
+
+    // Disable soffit for specific walls until overhang length is specified
+    $('#overhang-lew-ft, #overhang-lew-in').on('input', function(){
+        if($('#overhang-lew-ft').val() || $('#overhang-lew-in').val())
+            $('#soffit-lew').attr('disabled', false);
+        else
+            $('#soffit-lew').attr('disabled',true);
+    });
+    $('#overhang-rew-ft, #overhang-rew-in').on('input', function(){
+        if($('#overhang-rew-ft').val() || $('#overhang-rew-in').val())
+            $('#soffit-rew').attr('disabled', false);
+        else
+            $('#soffit-rew').attr('disabled',true);
+    });
+    $('#overhang-fsw-ft, #overhang-fsw-in').on('input', function(){
+        if($('#overhang-fsw-ft').val() || $('#overhang-fsw-in').val())
+            $('#soffit-fsw').attr('disabled', false);
+        else
+            $('#soffit-fsw').attr('disabled',true);
+    });
+    $('#overhang-bsw-ft, #overhang-bsw-in').on('input', function(){
+        if($('#overhang-bsw-ft').val() || $('#overhang-bsw-in').val())
+            $('#soffit-bsw').attr('disabled', false);
+        else
+            $('#soffit-bsw').attr('disabled',true);
     });
 
     /* ==================================================

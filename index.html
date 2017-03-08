@@ -854,6 +854,7 @@
                                 </table>
                             </div>
                             <div id="overhang-all" class="row col-md-12 stretch hide">
+                                <!-- ========================================Length======================================== -->
                                 <div class="col-sm-6 col-md-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-all-length">
                                         <thead>
@@ -877,6 +878,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Soffit======================================== -->
                                 <div class="col-xs-6 col-sm-2 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-all-soffit">
                                         <thead>
@@ -889,12 +891,13 @@
                                         <tbody>
                                         <tr>
                                             <td class="col-sm-6 col-sm-2">
-                                                <input id="soffit-all" class="form-control regular-checkbox big-checkbox" name="Soffit All" data-type="bool" type="checkbox">
+                                                <input id="soffit-all" class="form-control regular-checkbox big-checkbox" name="Soffit All" data-type="bool" type="checkbox" disabled>
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Apply All======================================== -->
                                 <div class="col-xs-6 col-sm-4 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-apply-all">
                                         <thead>
@@ -915,6 +918,7 @@
                                 </div>
                             </div>
                             <div id="overhang-walls" class="row">
+                                <!-- ========================================LEW======================================== -->
                                 <div class="col-md-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-lew">
                                         <thead>
@@ -931,19 +935,20 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Overhang LEW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="overhang-lew-ft" class="form-control" name="Overhang LEW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Overhang LEW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="overhang-lew-in" class="form-control" name="Overhang LEW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Soffit LEW" data-type="bool" type="checkbox">
+                                                <input id="soffit-lew" class="form-control regular-checkbox big-checkbox" name="Soffit LEW" data-type="bool" type="checkbox" disabled>
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================REW======================================== -->
                                 <div class="col-md-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-rew">
                                         <thead>
@@ -960,19 +965,20 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Overhang REW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="overhang-rew-ft" class="form-control" name="Overhang REW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Overhang REW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="overhang-rew-in" class="form-control" name="Overhang REW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Soffit REW" data-type="bool" type="checkbox">
+                                                <input id="soffit-rew" class="form-control regular-checkbox big-checkbox" name="Soffit REW" data-type="bool" type="checkbox" disabled>
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================FSW======================================== -->
                                 <div class="col-md-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-fsw">
                                         <thead>
@@ -989,19 +995,20 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Overhang FSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="overhang-fsw-ft" class="form-control" name="Overhang FSW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Overhang FSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="overhang-fsw-in" class="form-control" name="Overhang FSW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Soffit FSW" data-type="bool" type="checkbox">
+                                                <input id="soffit-fsw" class="form-control regular-checkbox big-checkbox" name="Soffit FSW" data-type="bool" type="checkbox" disabled>
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================BSW======================================== -->
                                 <div class="col-md-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="overhang-bsw">
                                         <thead>
@@ -1018,14 +1025,14 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Overhang BSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="overhang-bsw-ft" class="form-control" name="Overhang BSW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Overhang BSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="overhang-bsw-in" class="form-control" name="Overhang BSW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Soffit BSW" data-type="bool" type="checkbox">
+                                                <input id="soffit-bsw" class="form-control regular-checkbox big-checkbox" name="Soffit BSW" data-type="bool" type="checkbox" disabled>
                                             </td>
                                         </tr>
                                         </tbody>
