@@ -1155,6 +1155,7 @@
                                 </table>
                             </div>
                             <div id="liner-walls-all" class="row col-md-12 stretch hide">
+                                <!-- ========================================Liner Height======================================== -->
                                 <div class="col-sm-6 col-md-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-all-height">
                                         <thead>
@@ -1178,6 +1179,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Full Height Toggle======================================== -->
                                 <div class="col-xs-6 col-sm-2 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-all-full-height">
                                         <thead>
@@ -1196,6 +1198,7 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================Apply to All Walls======================================== -->
                                 <div class="col-xs-6 col-sm-4 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-apply-all">
                                         <thead>
@@ -1216,6 +1219,7 @@
                                 </div>
                             </div>
                             <div id="liner-walls" class="row">
+                                <!-- ========================================LEW======================================== -->
                                 <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-lew">
                                         <thead>
@@ -1232,19 +1236,20 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Liner LEW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="liner-lew-ft" class="form-control" name="Liner LEW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Liner LEW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="liner-lew-in" class="form-control" name="Liner LEW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Liner LEW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-lew" class="form-control regular-checkbox big-checkbox" name="Liner LEW Full Height" data-type="bool" type="checkbox">
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================REW======================================== -->
                                 <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-rew">
                                         <thead>
@@ -1261,19 +1266,20 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Liner REW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="liner-rew-ft" class="form-control" name="Liner REW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Liner REW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="liner-rew-in" class="form-control" name="Liner REW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Liner REW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-rew" class="form-control regular-checkbox big-checkbox" name="Liner REW Full Height" data-type="bool" type="checkbox">
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================FSW======================================== -->
                                 <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-fsw">
                                         <thead>
@@ -1290,19 +1296,20 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Liner FSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="liner-fsw-ft" class="form-control" name="Liner FSW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Liner FSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="liner-fsw-in" class="form-control" name="Liner FSW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Liner FSW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-fsw" class="form-control regular-checkbox big-checkbox" name="Liner FSW Full Height" data-type="bool" type="checkbox">
                                             </td>
                                         </tr>
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- ========================================BSW======================================== -->
                                 <div class="col-sm-6 stretch">
                                     <table class="table table-bordered table-hover table-responsive" id="liner-bsw">
                                         <thead>
@@ -1319,14 +1326,14 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Liner BSW Feet" data-type="number" type="text" placeholder="Feet">
+                                                    <input id="liner-bsw-ft" class="form-control" name="Liner BSW Feet" data-type="number" type="text" placeholder="Feet">
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Liner BSW Inches" data-type="number" type="text" placeholder="Inches">
+                                                    <input id="liner-bsw-in" class="form-control" name="Liner BSW Inches" data-type="number" type="text" placeholder="Inches">
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
                                             <td>
-                                                <input class="form-control regular-checkbox big-checkbox" name="Liner BSW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-bsw" class="form-control regular-checkbox big-checkbox" name="Liner BSW Full Height" data-type="bool" type="checkbox">
                                             </td>
                                         </tr>
                                         </tbody>

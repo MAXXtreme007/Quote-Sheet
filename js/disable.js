@@ -37,6 +37,7 @@ $(document).ready(function() {
             }
         }
     });
+
     // Disable soffit for all walls until overhang length is specified
     $('#soffit-all').prop('disabled',true);
     $('#overhang-all-ft, #overhang-all-in').on('input', function(){
@@ -58,14 +59,11 @@ $(document).ready(function() {
         if(($('#overhang-all-ft').val() || $('#overhang-all-in').val()) && this.checked)
             $('#soffit-all').attr('disabled', false);
         else
-            $('#soffit-all').attr('disabled',true);
+            $('#soffit-all').attr('disabled', true);
     });
 
     // Disable soffit for specific walls until overhang length is specified
-    $('#soffit-lew').prop('disabled',true);
-    $('#soffit-rew').prop('disabled',true);
-    $('#soffit-fsw').prop('disabled',true);
-    $('#soffit-bsw').prop('disabled',true);
+    $('#soffit-lew, #soffit-rew, #soffit-fsw, #soffit-bsw').prop('disabled',true);
     $('#overhang-lew-ft, #overhang-lew-in').on('input', function(){
         if($('#overhang-lew-ft').val() || $('#overhang-lew-in').val())
             $('#soffit-lew').attr('disabled', false);
@@ -89,6 +87,106 @@ $(document).ready(function() {
             $('#soffit-bsw').attr('disabled', false);
         else
             $('#soffit-bsw').attr('disabled',true);
+    });
+
+    /* ==================================================
+     Liner
+     ================================================== */
+
+    // Disable input for liner
+    $('#liner-panel-no').on('click', function() {
+        $(this).addClass('active');
+        if ($(this).hasClass('active')) {
+            $('#liner-walls-all').addClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').addClass('hide');
+            }
+        }
+    });
+
+    // Enable input for liner
+    $('#liner-panel-mloc').on('click', function() {
+        $(this).addClass('active');
+        if ($(this).hasClass('active')) {
+            $('#liner-walls-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').removeClass('hide');
+            }
+        }
+    });
+
+    // Enable input for liner
+    $('#liner-panel-ploc').on('click', function() {
+        $(this).addClass('active');
+        if ($(this).hasClass('active')) {
+            $('#liner-walls-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').removeClass('hide');
+            }
+        }
+    });
+
+    // Enable input for liner
+    $('#liner-panel-rloc').on('click', function() {
+        $(this).addClass('active');
+        if ($(this).hasClass('active')) {
+            $('#liner-walls-all').removeClass('hide');
+            if ($(!this.checked)) {
+                $('#liner-walls').removeClass('hide');
+            }
+        }
+    });
+
+    // Disable liner height for all walls if liner full height is selected
+    $('#liner-all-ft, #liner-all-in').prop('disabled',false);
+    $('#liner-full-height-toggle').on('click', function(){
+        if($('#liner-full-height-toggle').is(':checked'))
+            $('#liner-all-ft, #liner-all-in').prop('disabled',true);
+        else
+            $('#liner-all-ft, #liner-all-in').prop('disabled',false);
+    });
+
+    // Apply to all walls
+    $('#liner-walls-toggle').change(function() {
+        // Display liner options for separate walls
+        if( $("#liner-walls").css('display') == 'none') {
+            $('#liner-walls').css('display', 'table');
+        } else {
+            $('#liner-walls').css('display', 'none');
+        }
+        if (!this.checked()) {
+            if ($('#liner-full-height-toggle').checked())
+                $('#liner-full-height-toggle, #liner-all-ft, #liner-all-in').prop('disabled', true);
+            else
+                $('#liner-full-height-toggle, #liner-all-ft, #liner-all-in').prop('disabled', false);
+        }
+    });
+
+    // Disable liner height for specific walls if liner full height is selected
+    $('#liner-lew-ft, #liner-lew-in, #liner-rew-ft, #liner-rew-in, #liner-fsw-ft, #liner-fsw-in, #liner-bsw-ft, #liner-bsw-in').prop('disabled',false);
+    $('#liner-full-height-lew').on('click', function() {
+        if($('#liner-full-height-lew').is(':checked'))
+            $('#liner-lew-ft, #liner-lew-in').prop('disabled',true);
+        else
+            $('#liner-lew-ft, #liner-lew-in').prop('disabled',false);
+    });
+    $('#liner-full-height-rew').on('click', function() {
+        if($('#liner-full-height-rew').is(':checked'))
+            $('#liner-rew-ft, #liner-rew-in').prop('disabled',true);
+        else
+            $('#liner-rew-ft, #liner-rew-in').prop('disabled',false);
+    });
+    $('#liner-full-height-fsw').on('click', function() {
+        if($('#liner-full-height-fsw').is(':checked'))
+            $('#liner-fsw-ft, #liner-fsw-in').prop('disabled',true);
+        else
+            $('#liner-fsw-ft, #liner-fsw-in').prop('disabled',false);
+    });
+    $('#liner-full-height-bsw').on('click', function() {
+        if($('#liner-full-height-bsw').is(':checked'))
+            $('#liner-bsw-ft, #liner-bsw-in').prop('disabled',true);
+        else
+            $('#liner-bsw-ft, #liner-bsw-in').prop('disabled',false);
     });
 
     /* ==================================================
@@ -120,58 +218,6 @@ $(document).ready(function() {
             $('#wainscot-all').removeClass('hide');
             if ($(!this.checked)) {
                 $('#wainscot-walls').removeClass('hide');
-            }
-        }
-    });
-
-    /* ==================================================
-       Liner
-    ================================================== */
-
-    $('#liner-walls-toggle').change(function() {
-        if( $("#liner-walls").css('display') == 'none') {
-            $('#liner-walls').css('display', 'table');
-        } else {
-            $('#liner-walls').css('display', 'none');
-        }
-        $('#liner-all-ft').attr('disabled', !this.checked);
-        $('#liner-all-in').attr('disabled', !this.checked);
-        $('#liner-full-height-toggle').prop("disabled", !this.checked);
-    });
-
-    $('#liner-panel-no').on('click', function() {
-        $(this).addClass('active');
-        if ($(this).hasClass('active')) {
-            $('#liner-walls-all').addClass('hide');
-            if ($(!this.checked)) {
-                $('#liner-walls').addClass('hide');
-            }
-        }
-    });
-    $('#liner-panel-mloc').on('click', function() {
-        $(this).addClass('active');
-        if ($(this).hasClass('active')) {
-            $('#liner-walls-all').removeClass('hide');
-            if ($(!this.checked)) {
-                $('#liner-walls').removeClass('hide');
-            }
-        }
-    });
-    $('#liner-panel-ploc').on('click', function() {
-        $(this).addClass('active');
-        if ($(this).hasClass('active')) {
-            $('#liner-walls-all').removeClass('hide');
-            if ($(!this.checked)) {
-                $('#liner-walls').removeClass('hide');
-            }
-        }
-    });
-    $('#liner-panel-rloc').on('click', function() {
-        $(this).addClass('active');
-        if ($(this).hasClass('active')) {
-            $('#liner-walls-all').removeClass('hide');
-            if ($(!this.checked)) {
-                $('#liner-walls').removeClass('hide');
             }
         }
     });
