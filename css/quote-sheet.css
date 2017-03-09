@@ -206,8 +206,8 @@ label.btn:last-of-type {
 }
 
 th.text-center {
-    /*background-color: #7A7A7A;
-      color: #FFF;*/
+    /*background-color: #7A7A7A;*/
+    /*color: #FFF;*/
 }
 
 td {
@@ -232,7 +232,6 @@ td {
 .input-group-addon:last-child {
     border-radius: 0 50px 50px 0;
 }
-
 
 /* ==================================================
    JQuery Autocomplete

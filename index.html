@@ -1547,77 +1547,101 @@
                             <label class="s-header table-header">Left End Wall</label>
                         </div>
                     </div>
-                    <div class="col-sm-10 stretch">
-                        <div class="col-sm-2 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-qty">
-                                <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        Quantity
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr id='addr-fo-lew-qty0'>
-                                    <td>
-                                        <input class="form-control" name="Framed Openings LEW Quantity" data-type="number" type="number" placeholder="Qty" />
-                                    </td>
-                                </tr>
-                                <tr id='addr-fo-lew-qty1'></tr>
-                                </tbody>
-                            </table>
+                    <div id="fo-lew" class="col-sm-10 stretch">
+                        <div id="addr-fo-lew0" class="row">
+                            <!-- ========================================Counter======================================== -->
+                            <div class="col-sm-1 stretch">
+                                <table class="table table-bordered table-hover table-responsive">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center visible-sm visible-md visible-lg">
+                                            FO #
+                                        </th>
+                                        <th class="text-center visible-xs">
+                                            Framed Opening #
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr id="fo-lew-counter-container0">
+                                        <td id="fo-lew-counter0">
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ========================================Quantity======================================== -->
+                            <div class="col-sm-3 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-lew-qty">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Quantity
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="form-control" name="Framed Openings LEW Quantity" data-type="number" type="number" placeholder="Qty" />
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ========================================Width======================================== -->
+                            <div class="col-sm-4 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-lew-w">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Width
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings LEW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings LEW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- ========================================Height======================================== -->
+                            <div class="col-sm-4 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="fo-lew-h">
+                                    <thead>
+                                    <tr>
+                                        <th class="text-center">
+                                            Height
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="input-group">
+                                                <input class="form-control" name="Framed Openings LEW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
+                                                <input class="form-control" name="Framed Openings LEW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-w">
-                                <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        Width
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr id='addr-fo-lew-w0'>
-                                    <td>
-                                        <div class="input-group">
-                                            <input class="form-control" name="Framed Openings LEW Width Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                            <input class="form-control" name="Framed Openings LEW Width Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                    </td>
-                                </tr>
-                                <tr id='addr-fo-lew-w1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="col-sm-5 stretch">
-                            <table class="table table-bordered table-hover table-responsive" id="fo-lew-h">
-                                <thead>
-                                <tr>
-                                    <th class="text-center">
-                                        Height
-                                    </th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr id='addr-fo-lew-h0'>
-                                    <td>
-                                        <div class="input-group">
-                                            <input class="form-control" name="Framed Openings LEW Height Feet" data-type="number" type="number" placeholder="Feet"><span class="input-group-addon">ft</span>
-                                            <input class="form-control" name="Framed Openings LEW Height Inches" data-type="number" type="number" placeholder="Inches"><span class="input-group-addon">in</span></div>
-                                    </td>
-                                </tr>
-                                <tr id='addr-fo-lew-h1'></tr>
-                                </tbody>
-                            </table>
-                        </div>
+                        <div id="addr-fo-lew1" class="row"></div>
                     </div>
                     <div class="col-sm-2 add-row">
                         <div class="btn-group-vertical visible-xs visible-md visible-lg" role="group" aria-label="...">
-                            <a id="add_row_fo_lew" class="btn btn-success">Add LEW FO</a>
-                            <a id='delete_row_fo_lew' class="btn btn-danger">Delete LEW FO</a>
+                            <a id="add_row_fo_lew1" class="btn btn-success">Add LEW FO</a>
+                            <a id='delete_row_fo_lew1' class="btn btn-danger">Delete LEW FO</a>
                         </div>
                         <div class="btn-group-vertical visible-sm" role="group" aria-label="...">
-                            <a id="add_row_fo_lew" class="btn btn-success">Add FO</a>
-                            <a id='delete_row_fo_lew' class="btn btn-danger">Delete FO</a>
+                            <a id="add_row_fo_lew2" class="btn btn-success">Add FO</a>
+                            <a id='delete_row_fo_lew2' class="btn btn-danger">Delete FO</a>
                         </div>
                     </div>
                 </div>
@@ -1629,6 +1653,7 @@
                         </div>
                     </div>
                     <div class="col-sm-10 stretch">
+                        <!-- ========================================Quantity======================================== -->
                         <div class="col-sm-2 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-rew-qty">
                                 <thead>
@@ -1648,6 +1673,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- ========================================Width======================================== -->
                         <div class="col-sm-5 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-rew-w">
                                 <thead>
@@ -1669,6 +1695,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- ========================================Height======================================== -->
                         <div class="col-sm-5 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-rew-h">
                                 <thead>
@@ -1710,6 +1737,7 @@
                         </div>
                     </div>
                     <div class="col-sm-10 stretch">
+                        <!-- ========================================Quantity======================================== -->
                         <div class="col-sm-2 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-fsw-qty">
                                 <thead>
@@ -1729,6 +1757,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- ========================================Width======================================== -->
                         <div class="col-sm-5 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-fsw-w">
                                 <thead>
@@ -1750,6 +1779,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- ========================================Height======================================== -->
                         <div class="col-sm-5 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-fsw-h">
                                 <thead>
@@ -1791,6 +1821,7 @@
                         </div>
                     </div>
                     <div class="col-sm-10 stretch">
+                        <!-- ========================================Quantity======================================== -->
                         <div class="col-sm-2 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-bsw-qty">
                                 <thead>
@@ -1810,6 +1841,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- ========================================Width======================================== -->
                         <div class="col-sm-5 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-bsw-w">
                                 <thead>
@@ -1831,6 +1863,7 @@
                                 </tbody>
                             </table>
                         </div>
+                        <!-- ========================================Height======================================== -->
                         <div class="col-sm-5 stretch">
                             <table class="table table-bordered table-hover table-responsive" id="fo-bsw-h">
                                 <thead>

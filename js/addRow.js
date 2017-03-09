@@ -2,25 +2,23 @@ $(document).ready(function() {
 /* ==================================================
    Left End Wall
 ================================================== */
-    var lew_i = 1;
-    $("#add_row_fo_lew").click(function() {
-        $('#addr-fo-lew-qty' + lew_i).html("<td><input class='form-control' name='Framed Openings LEW Quantity' data-type='number' type='number' placeholder='Qty' /></td>");
-        $('#addr-fo-lew-w' + lew_i).html("<td><div class='input-group'><input class='form-control' name='Framed Openings LEW Width Feet' data-type='number' type='number' placeholder='Feet'><span class='input-group-addon'>ft</span><input class='form-control' name='Framed Openings LEW Width Inches' data-type='number' type='number' placeholder='Inches'><span class='input-group-addon'>in</span></div></td>");
-        $('#addr-fo-lew-h' + lew_i).html("<td><div class='input-group'><input class='form-control' name='Framed Openings LEW Height Feet' data-type='number' type='number' placeholder='Feet'><span class='input-group-addon'>ft</span><input class='form-control' name='Framed Openings LEW Height Inches' data-type='number' type='number' placeholder='Inches'><span class='input-group-addon'>in</span></div></td>");
 
-        $('#fo-lew-qty').append('<tr id="addr-fo-lew-qty' + (lew_i + 1) + '"></tr>');
-        $('#fo-lew-w').append('<tr id="addr-fo-lew-w' + (lew_i + 1) + '"></tr>');
-        $('#fo-lew-h').append('<tr id="addr-fo-lew-h' + (lew_i + 1) + '"></tr>');
+    var lew_i = 1;
+    $('#fo-lew-counter0').append("<h4 id='fo-lew-counter'>" + lew_i + "</h4>");
+    $("#add_row_fo_lew1, #add_row_fo_lew2").click(function() {
+        $('#addr-fo-lew' + lew_i).html("<div class='col-sm-1 stretch'><table class='table table-bordered table-hover table-responsive'><thead class='hidden-sm hidden-md hidden-lg'><tr><th class='text-center'>FO #</th></tr></thead><tbody><tr id='fo-lew-counter-countainer'><td id='fo-lew-counter'></td></tr></tbody></table></div><div class='col-sm-3 stretch'><table class='table table-bordered table-hover table-responsive' id='fo-lew-qty'><thead class='hidden-sm hidden-md hidden-lg'><tr><th class='text-center'>Quantity</th></tr></thead><tbody><tr><td><input class='form-control' name='Framed Openings LEW Quantity' data-type='number' type='number' placeholder='Qty' /></td></tr></tbody></table></div><div class='col-sm-4 stretch'><table class='table table-bordered table-hover table-responsive' id='fo-lew-w'><thead class='hidden-sm hidden-md hidden-lg'><tr><th class='text-center'>Width</th></tr></thead><tbody><tr><td><div class='input-group'><input class='form-control' name='Framed Openings LEW Width Feet' data-type='number' type='number' placeholder='Feet'><span class='input-group-addon'>ft</span><input class='form-control' name='Framed Openings LEW Width Inches' data-type='number' type='number' placeholder='Inches'><span class='input-group-addon'>in</span></div></td></tr></tbody></table></div><div class='col-sm-4 stretch'><table class='table table-bordered table-hover table-responsive' id='fo-lew-h'><thead class='hidden-sm hidden-md hidden-lg'><tr><th class='text-center'>Height</th></tr></thead><tbody><tr><td><div class='input-group'><input class='form-control' name='Framed Openings LEW Height Feet' data-type='number' type='number' placeholder='Feet'><span class='input-group-addon'>ft</span><input class='form-control' name='Framed Openings LEW Height Inches' data-type='number' type='number' placeholder='Inches'><span class='input-group-addon'>in</span></div></td></tr></tbody></table></div>");
+        $('#fo-lew-counter' + lew_i).html('<h4>' + (lew_i) + '</h4>');
+
+        $('#fo-lew').append('<div id="addr-fo-lew' + (lew_i + 1) + '"></div>');
         lew_i++;
     });
-    $("#delete_row_fo_lew").click(function() {
+    $("#delete_row_fo_lew1, #delete_row_fo_lew2").click(function() {
         if (lew_i > 1) {
-            $("#addr-fo-lew-qty" + (lew_i - 1)).html('');
-            $("#addr-fo-lew-w" + (lew_i - 1)).html('');
-            $("#addr-fo-lew-h" + (lew_i - 1)).html('');
+            $("#addr-fo-lew" + (lew_i - 1)).html('');
             lew_i--;
         }
     });
+
 /* ==================================================
    Right End Wall
 ================================================== */
