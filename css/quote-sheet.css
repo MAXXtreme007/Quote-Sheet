@@ -201,11 +201,8 @@ label.btn:last-of-type {
     margin: 0px;
 }
 
-@media only screen and (max-width: 768px) {
-    /*Remove padding on phones to make buttons fill screen*/
-    .separator {
-        border-top: solid 4px #FF6600;
-    }
+.separator-line {
+    border-top: solid 4px #FF6600;
 }
 
 .table {
