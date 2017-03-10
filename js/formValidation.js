@@ -1,7 +1,23 @@
+$(document).ready(function() {
+    function isValidNumber (number) {
+        var posNum = new RegExp(/^[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)$/);
+        return posNum.test(number);
+    }
+
+    $('.valNum').on('input', function() {
+        var number = $('#valNum');
+        if (!isValidNumber('.valNum')) {
+            alert("Invalid");
+            $('.valNum').val(
+                function (index, value) {
+                    return value.substr(0, value.length - 1);
+                })
+        }
+    });
+});
+
 $(function() {
-
     // put your own error messages and/or message translation logic here
-
     var errorMessages = {
         "REQUIRED": "This field is required",
         "UNIQUE": "This value already exists",
