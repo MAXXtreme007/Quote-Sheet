@@ -803,7 +803,9 @@
                                         <tbody>
                                         <tr>
                                             <td class="col-sm-6 col-sm-2">
-                                                <input id="soffit-all" class="form-control regular-checkbox big-checkbox" name="Soffit All" data-type="bool" type="checkbox" disabled>
+                                                <div class="pops"  data-toggle="popover" data-trigger="hover" data-placement="top" title="Soffit" data-content="Soffit requires overhang. Please fill in overhang before selecting soffit.">
+                                                    <input id="soffit-all" class="form-control regular-checkbox big-checkbox" name="Soffit All" data-type="bool" type="checkbox" disabled>
+                                                </div>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -822,7 +824,7 @@
                                         <tbody>
                                         <tr>
                                             <td class="col-sm-6 col-md-4">
-                                                <input id="overhang-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Overhang All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                                <input id="overhang-walls-toggle" class="form-control regular-checkbox big-checkbox pops" name="Overhang All Toggle" data-type="bool" type="checkbox" checked="checked" data-toggle="popover" data-trigger="hover" data-placement="top" title="Apply to All Walls" data-content="Unchecking this option will allow you to specify different overhang lengths for each wall.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1192,7 +1194,7 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <input id="liner-full-height-toggle" class="form-control regular-checkbox big-checkbox" name="Liner Full Height Toggle" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-toggle" class="form-control regular-checkbox big-checkbox pops" name="Liner Full Height Toggle" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1211,7 +1213,7 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <input id="liner-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Liner All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                                <input id="liner-walls-toggle" class="form-control regular-checkbox big-checkbox pops" name="Liner All Toggle" data-type="bool" type="checkbox" checked="checked" data-toggle="popover" data-trigger="hover" data-placement="top" title="Apply to All Walls" data-content="Unchecking this option will allow you to specify different liner heights for different walls.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1243,7 +1245,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-lew" class="form-control regular-checkbox big-checkbox" name="Liner LEW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-lew" class="form-control regular-checkbox big-checkbox pops" name="Liner LEW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1273,7 +1275,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-rew" class="form-control regular-checkbox big-checkbox" name="Liner REW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-rew" class="form-control regular-checkbox big-checkbox pops" name="Liner REW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1303,7 +1305,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-fsw" class="form-control regular-checkbox big-checkbox" name="Liner FSW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-fsw" class="form-control regular-checkbox big-checkbox pops" name="Liner FSW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1333,7 +1335,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-bsw" class="form-control regular-checkbox big-checkbox" name="Liner BSW Full Height" data-type="bool" type="checkbox">
+                                                <input id="liner-full-height-bsw" class="form-control regular-checkbox big-checkbox pops" name="Liner BSW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1430,7 +1432,7 @@
                                             </div>
                                         </td>
                                         <td class="col-sm-4">
-                                            <input id="wainscot-walls-toggle" class="form-control regular-checkbox big-checkbox" name="Wainscot All Toggle" data-type="bool" type="checkbox" checked="checked">
+                                            <input id="wainscot-walls-toggle" class="form-control regular-checkbox big-checkbox pops" name="Wainscot All Toggle" data-type="bool" type="checkbox" checked="checked" data-toggle="popover" data-trigger="hover" data-placement="top" title="Apply to All Walls" data-content="Unchecking this option will allow you to specify different wainscot heights for different walls.">
                                         </td>
                                     </tr>
                                     </tbody>

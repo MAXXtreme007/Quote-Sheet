@@ -386,7 +386,6 @@ label.req:last-of-type {
     border: 3px solid #FF6600;
 }
 
-
 /* ==================================================
    Leads Form
 ================================================== */
@@ -472,6 +471,20 @@ h2.modal-title {
     font-size: 1.2em;
     font-weight: bold;
     color: #FF6600;
+}
+
+.popover{
+    width:240px;
+    height:160px;
+    text-align: center;
+}
+.popover-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.popover-content {
+    font-size: 12px;
 }
 
 #notes {
