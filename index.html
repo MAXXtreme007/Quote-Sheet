@@ -29,7 +29,7 @@
                 <div class="row nav-wrapper">
                     <nav class="navbar navbar-fixed-top navbar-inverse">
                         <div class="container-fluid">
-                            <a id="mobile-logo" class="navbar-center" href="#"><img src="media/Steel Tech Circle.png" alt="Steel Tech Logo" height: "64" width="66"></a>
+                            <a id="mobile-logo" class="navbar-center" href="#"><img src="media/Steel Tech Circle.png" alt="Steel Tech Logo" width="66"></a>
                             <!-- Brand and toggle get grouped for better mobile display -->
                             <div class="navbar-header">
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -82,7 +82,7 @@
         </div>
         <!-- ========================================Begin Form======================================== -->
         <form role="form" id="leads-form">
-            <!-- ========================================Personal Information======================================== -->
+            <!-- ========================================Personnel Information======================================== -->
             <div class="col-md-12">
                 <div class="l-header">
                     <h3 class="visible-sm visible-md visible-lg">Personnel Information</h3>
@@ -91,30 +91,56 @@
                 <div class="col-lg-12 stretch">
                     <div class="form-group">
                         <!-- ========================================Dealer Contact======================================== -->
-                        <div class="col-lg-6 stretch">
+                        <div class="col-md-6 stretch">
                             <label class="s-header table-header">Dealer Contact</label>
-                            <table class="table table-bordered table-hover table-responsive" id="dealer-contact">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <input class="form-control req" placeholder="Name" title="Dealer Contact" name="Contact" data-type="text" type="text" required>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <div class="col-lg-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="dealer-contact-first-name">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="form-control req" placeholder="First Name" title="Dealer Contact" name="Contact First Name" data-type="text" type="text" required>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="dealer-contact-last-name">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <input class="form-control req" placeholder="Last Name" title="Dealer Contact" name="Contact Last Name" data-type="text" type="text" required>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                         <!-- ========================================Customer Name======================================== -->
                         <div class="col-md-6 stretch">
                             <label class="s-header table-header">Customer Name</label>
-                            <table class="table table-bordered table-hover table-responsive" id="customer-name">
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <input id="customer" class="form-control req" placeholder="Name" title="Customer Name" name="Customer Name" data-type="text" type="text" required>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <div class="col-lg-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="customer-first-name">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <input id="customer-first" class="form-control req" placeholder="First Name" title="Customer First Name" name="Customer First Name" data-type="text" type="text" required>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 stretch">
+                                <table class="table table-bordered table-hover table-responsive" id="customer-last-name">
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <input id="customer-last" class="form-control req" placeholder="Last Name" title="Customer Last Name" name="Customer Last Name" data-type="text" type="text" required>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -135,19 +161,6 @@
                                     <tr>
                                         <td>
                                             <input class="form-control req" placeholder="Name" title="Job Name" name="Jobname" data-type="text" type="text" required>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- ========================================Job Address======================================== -->
-                        <div class="col-lg-12 stretch">
-                            <label class="s-header table-header">Job Address</label>
-                            <table class="table table-bordered table-hover table-responsive" id="job-address">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="form-control req" placeholder="Address" title="Job Address" name="Job Address" data-type="text" type="text" required>
                                         </td>
                                     </tr>
                                 </tbody>
