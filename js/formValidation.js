@@ -1,19 +1,24 @@
 $(document).ready(function() {
-    function isValidNumber (number) {
-        var posNum = new RegExp(/^[+]?([0-9]+(?:[\.][0-9]*)?|\.[0-9]+)$/);
-        return posNum.test(number);
-    }
 
-    $('.valNum').on('input', function() {
-        var number = $('#valNum');
-        if (!isValidNumber('.valNum')) {
-            alert("Invalid");
-            $('.valNum').val(
-                function (index, value) {
-                    return value.substr(0, value.length - 1);
-                })
-        }
-    });
+    // validate number inputSelector
+    var goodNumber = /^(\+|-)?((\d+(\.\d+)?)|(\.\d+))$/
+    var goodPrefix = /^(\+|-)?((\d*(\.?\d*)?)|(\.\d*))$/
+
+    $('.valNum')
+        .data("oldValue",'')
+        .bind('input propertychange', function() {
+            var $this = $(this);
+            var newValue = $this.val();
+
+            if ( !goodPrefix.test(newValue) )
+                return $this.val($this.data('oldValue'));
+            if ( goodNumber.test(newValue) || !$(this).val() )
+                $this.removeClass("error-border");
+            else
+                $this.addClass("error-border");
+
+            return $this.data('oldValue',newValue)
+        });
 });
 
 $(function() {

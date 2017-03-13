@@ -303,7 +303,7 @@
                                                 <div class="input-group">
                                                     <input class="form-control req valNum" name="Out-to-Out Width Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon req">ft</span>
-                                                    <input class="form-control" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control valNum" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -325,9 +325,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req valNum" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control valNum" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -352,9 +352,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req valNum" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control valNum" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -376,9 +376,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req valNum" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control valNum" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -1194,7 +1194,7 @@
                                         <tbody>
                                         <tr>
                                             <td>
-                                                <input id="liner-full-height-toggle" class="form-control regular-checkbox big-checkbox pops" name="Liner Full Height Toggle" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
+                                                <input id="liner-full-height-toggle" class="form-control regular-checkbox big-checkbox pops" name="Liner Full Height Toggle" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof. Enabling full height liner disallows you to enter a specific height for the walls.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1245,7 +1245,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-lew" class="form-control regular-checkbox big-checkbox pops" name="Liner LEW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
+                                                <input id="liner-full-height-lew" class="form-control regular-checkbox big-checkbox pops" name="Liner LEW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof. Enabling full height liner disallows you to enter a specific height for the walls.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1275,7 +1275,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-rew" class="form-control regular-checkbox big-checkbox pops" name="Liner REW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
+                                                <input id="liner-full-height-rew" class="form-control regular-checkbox big-checkbox pops" name="Liner REW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof. Enabling full height liner disallows you to enter a specific height for the walls.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1305,7 +1305,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-fsw" class="form-control regular-checkbox big-checkbox pops" name="Liner FSW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
+                                                <input id="liner-full-height-fsw" class="form-control regular-checkbox big-checkbox pops" name="Liner FSW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof. Enabling full height liner disallows you to enter a specific height for the walls.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1335,7 +1335,7 @@
                                                 </div>
                                             </td>
                                             <td>
-                                                <input id="liner-full-height-bsw" class="form-control regular-checkbox big-checkbox pops" name="Liner BSW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof.">
+                                                <input id="liner-full-height-bsw" class="form-control regular-checkbox big-checkbox pops" name="Liner BSW Full Height" data-type="bool" type="checkbox" data-toggle="popover" data-trigger="hover" data-placement="top" title="Full Height" data-content="Full height liner will span from the floor to the roof. Enabling full height liner disallows you to enter a specific height for the walls.">
                                             </td>
                                         </tr>
                                         </tbody>
@@ -1890,22 +1890,23 @@
                     <div class="form-group">
                         <div class="row">
                             <label class="s-header table-header">Occupancy Category</label>
+                            <!-- ========================================Occupancy Category======================================== -->
                             <div class="col-md-12 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="loads">
                                     <tbody>
                                     <tr>
                                         <td>
                                             <div class="btn-group-inline" data-toggle="buttons">
-                                                <label class="btn btn-default col-xs-3 req">
+                                                <label class="btn btn-default col-xs-3 req pops" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occupancy I" data-content="Low, Storage, Warehouse, or Agricultural">
                                                     <input type="radio" name="load" id="load-1" autocomplete="off" value="I: Low, Storage, Warehouse, or Agricultural" required>I
                                                 </label>
-                                                <label class="btn btn-default col-xs-3 req">
+                                                <label class="btn btn-default col-xs-3 req pops" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occupancy II" data-content="Normal, Standard Building">
                                                     <input type="radio" name="load" id="load-2" autocomplete="off" value="II: Normal, Standard Building">II
                                                 </label>
-                                                <label class="btn btn-default col-xs-3 req">
+                                                <label class="btn btn-default col-xs-3 req pops" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occupancy III" data-content="High Schools, Large Occupancy">
                                                     <input type="radio" name="load" id="load-3" autocomplete="off" value="III: High Schools, Large Occupancy">III
                                                 </label>
-                                                <label class="btn btn-default col-xs-3 req">
+                                                <label class="btn btn-default col-xs-3 req pops" data-toggle="popover" data-trigger="hover" data-placement="top" title="Occupancy IV" data-content="Post Essential, Fire Department, Hospital">
                                                     <input type="radio" name="load" id="load-4" autocomplete="off" value="IV: Post Essential, Fire Department, Hospital">IV
                                                 </label>
                                             </div>

@@ -387,6 +387,45 @@ label.req:last-of-type {
 }
 
 /* ==================================================
+   Errors
+================================================== */
+
+input.error-border {
+    border: 3px solid #FF0000;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+label:first-of-type.error-border {
+    border-top: 3px solid #FF0000;
+    border-left: 3px solid #FF0000;
+    border-bottom: 3px solid #FF0000;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+label.error-border {
+    border-top: 3px solid #FF0000;
+    border-bottom: 3px solid #FF0000;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+label:last-of-type.error-border {
+    border-top: 3px solid #FF0000;
+    border-right: 3px solid #FF0000;
+    border-bottom: 3px solid #FF0000;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.fill-border.error-border {
+    border: 3px solid #FF0000;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* ==================================================
    Leads Form
 ================================================== */
 
