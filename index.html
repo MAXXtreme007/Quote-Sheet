@@ -82,8 +82,45 @@
         </div>
         <!-- ========================================Begin Form======================================== -->
         <form role="form" id="leads-form">
+            <!-- ========================================Personal Information======================================== -->
+            <div class="col-md-12">
+                <div class="l-header">
+                    <h3 class="visible-sm visible-md visible-lg">Personnel Information</h3>
+                    <h3 class="visible-xs">Personnel Info</h3>
+                </div>
+                <div class="col-lg-12 stretch">
+                    <div class="form-group">
+                        <!-- ========================================Dealer Contact======================================== -->
+                        <div class="col-lg-6 stretch">
+                            <label class="s-header table-header">Dealer Contact</label>
+                            <table class="table table-bordered table-hover table-responsive" id="dealer-contact">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <input class="form-control req" placeholder="Name" title="Dealer Contact" name="Contact" data-type="text" type="text" required>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- ========================================Customer Name======================================== -->
+                        <div class="col-md-6 stretch">
+                            <label class="s-header table-header">Customer Name</label>
+                            <table class="table table-bordered table-hover table-responsive" id="customer-name">
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <input id="customer" class="form-control req" placeholder="Name" title="Customer Name" name="Customer Name" data-type="text" type="text" required>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- ========================================Job Information======================================== -->
-            <div class="col-md-6">
+            <div class="col-md-12">
                 <div class="l-header">
                     <h3 class="visible-sm visible-md visible-lg">Job Information</h3>
                     <h3 class="visible-xs">Job Info</h3>
@@ -117,7 +154,7 @@
                             </table>
                         </div>
                         <!-- ========================================Job City======================================== -->
-                        <div class="col-lg-12 stretch">
+                        <div class="col-md-6 stretch">
                             <label class="s-header table-header">Job City</label>
                             <table class="table table-bordered table-hover table-responsive" id="job-city">
                                 <tbody>
@@ -130,7 +167,7 @@
                             </table>
                         </div>
                         <!-- ========================================Job State======================================== -->
-                        <div class="col-lg-12 stretch">
+                        <div class="col-md-6 stretch">
                             <label class="s-header table-header">Job State</label>
                             <table class="table table-bordered table-hover table-responsive" id="job-state">
                                 <tbody>
@@ -143,7 +180,7 @@
                             </table>
                         </div>
                         <!-- ========================================Job Zip======================================== -->
-                        <div class="col-lg-12 stretch">
+                        <div class="col-md-6 stretch">
                             <label class="s-header table-header">Job Zip</label>
                             <table class="table table-bordered table-hover table-responsive" id="job-zip">
                                 <tbody>
@@ -155,88 +192,25 @@
                                 </tbody>
                             </table>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ========================================Delivery Information======================================== -->
-            <div class="col-md-6">
-                <div class="l-header">
-                    <h3 class="visible-sm visible-md visible-lg">Delivery Information</h3>
-                    <h3 class="visible-xs">Delivery Info</h3>
-                </div>
-                <div class="col-lg-12 stretch">
-                    <div class="form-group">
-                        <!-- ========================================Delivery Contact======================================== -->
-                        <div class="col-lg-12 stretch">
-                            <label class="s-header table-header">Delivery Contact</label>
-                            <table class="table table-bordered table-hover table-responsive" id="delivery-contact">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="form-control" placeholder="Name" title="Delivery Contact" name="Delivery Contact" data-type="text" type="text">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- ========================================CSMI Representative======================================== -->
-                        <div class="col-lg-12 stretch">
-                            <label class="s-header table-header">CSMI Representative</label>
-                            <table class="table table-bordered table-hover table-responsive" id="csmi-rep">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="form-control" placeholder="Name" title="CSMI Representative Name" name="CSMI Representative" data-type="text" type="text">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- ========================================Delivery Phone======================================== -->
-                        <div class="col-lg-12 stretch">
-                            <label class="s-header table-header">Delivery Phone</label>
-                            <table class="table table-bordered table-hover table-responsive" id="delivery-phone">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="form-control" placeholder="Phone" title="Delivery Phone" name="Delivery Phone" data-type="text" type="text">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <!-- ========================================Delivery Email======================================== -->
-                        <div class="col-lg-12 stretch">
-                            <label class="s-header table-header">Delivery Email</label>
-                            <table class="table table-bordered table-hover table-responsive" id="delivery-email">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <input class="form-control" placeholder="Email" title="Delivery Email" name="Delivery Email" data-type="email" type="email">
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
                         <!-- ========================================City Limits======================================== -->
-                        <div class="col-lg-12 stretch">
+                        <div class="col-md-6 stretch">
                             <div class="form-group">
                                 <div class="col-md-12 stretch">
                                     <label class="s-header table-header">City Limits</label>
                                     <table class="table table-bordered table-hover table-responsive" id="city-limits">
                                         <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="btn-group-inline" data-toggle="buttons">
-                                                        <label class="btn btn-default col-xs-6 req">
-                                                            <input type="radio" name="city-limits" id="city-limits-no" autocomplete="off" value="No" required>No
-                                                        </label>
-                                                        <label class="btn btn-default col-xs-6 req">
-                                                            <input type="radio" name="city-limits" id="city-limits-yes" autocomplete="off" value="Yes">Yes
-                                                        </label>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="btn-group-inline" data-toggle="buttons">
+                                                    <label class="btn btn-default col-xs-6 req">
+                                                        <input type="radio" name="city-limits" id="city-limits-no" autocomplete="off" value="No" required>No
+                                                    </label>
+                                                    <label class="btn btn-default col-xs-6 req">
+                                                        <input type="radio" name="city-limits" id="city-limits-yes" autocomplete="off" value="Yes">Yes
+                                                    </label>
+                                                </div>
+                                            </td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>
@@ -301,9 +275,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req valNum" name="Out-to-Out Width Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req posNum" name="Out-to-Out Width Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon req">ft</span>
-                                                    <input class="form-control valNum" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control posNum" name="Out-to-Out Width Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -325,9 +299,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req valNum" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req posNum" name="Out-to-Out Length Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control valNum" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control posNum" name="Out-to-Out Length Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -352,9 +326,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req valNum" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req posNum" name="Sidewall Eave Height FSW Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control valNum" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control posNum" name="Sidewall Eave Height FSW Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -376,9 +350,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control req valNum" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" required />
+                                                    <input class="form-control req posNum" name="Sidewall Eave Height BSW Feet" data-type="number" type="text" placeholder="Feet" required />
                                                     <span class="input-group-addon">ft</span>
-                                                    <input class="form-control valNum" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" />
+                                                    <input class="form-control posNum" name="Sidewall Eave Height BSW Inches" data-type="number" type="text" placeholder="Inches" />
                                                     <span class="input-group-addon">in</span>
                                                 </div>
                                             </td>
@@ -424,9 +398,9 @@
                                         <tr>
                                             <td>
                                                 <div class="input-group">
-                                                    <input class="form-control" name="Bay Spacing Sidewalls" data-type="number" type="text" placeholder="# Bays" />
+                                                    <input class="form-control wholeNum" name="Bay Spacing Sidewalls" data-type="number" type="text" placeholder="# Bays" />
                                                     <span class="input-group-addon">@</span>
-                                                    <input class="form-control" name="Bay Spacing Length" data-type="number" type="text" placeholder="Length" />
+                                                    <input class="form-control posNum" name="Bay Spacing Length" data-type="number" type="text" placeholder="Length" />
                                                     <span class="input-group-addon">ft</span>
                                                 </div>
                                             </td>
@@ -609,6 +583,7 @@
                     <div class="form-group">
                         <label class="s-header table-header">Wind Framing</label>
                         <div class="row">
+                            <!-- ========================================Wind Framing Warning Button======================================== -->
                             <div class="col-sm-12 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="wind-framing-info">
                                     <tbody>
@@ -622,6 +597,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <!-- ========================================Wind Framing FSW======================================== -->
                             <div class="col-sm-6 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="cables">
                                     <thead>
@@ -635,12 +611,15 @@
                                     <tr>
                                         <td>
                                             <div class="btn-group-inline" data-toggle="buttons">
+                                                <!-- ========================================Cables======================================== -->
                                                 <label class="btn btn-default col-xs-4">
                                                     <input type="radio" name="FSW Cables" id="fsw-cables" autocomplete="off" value="Cables">Cables
                                                 </label>
+                                                <!-- ========================================Wind Column======================================== -->
                                                 <label class="btn btn-default col-xs-4">
                                                     <input type="radio" name="FSW Wind Column" id="fsw-wind-column" autocomplete="off" value="Wind Column">Wind Column
                                                 </label>
+                                                <!-- ========================================Portal Frame======================================== -->
                                                 <label class="btn btn-default col-xs-4">
                                                     <input type="radio" name="FSW Portal Frame" id="fsw-portal-frame" autocomplete="off" value="Portal Frame">Portal Frame
                                                 </label>
@@ -650,6 +629,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <!-- ========================================Wind Framing BSW======================================== -->
                             <div class="col-sm-6 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="cables">
                                     <thead>
@@ -663,12 +643,15 @@
                                     <tr>
                                         <td>
                                             <div class="btn-group-inline" data-toggle="buttons">
+                                                <!-- ========================================Cables======================================== -->
                                                 <label class="btn btn-default col-xs-4">
                                                     <input type="radio" name="BSW Cables" id="bsw-cables" autocomplete="off" value="Cables">Cables
                                                 </label>
+                                                <!-- ========================================Wind Column======================================== -->
                                                 <label class="btn btn-default col-xs-4">
                                                     <input type="radio" name="BSW Wind Column" id="bsw-wind-column" autocomplete="off" value="Wind Column">Wind Column
                                                 </label>
+                                                <!-- ========================================Portal Frame======================================== -->
                                                 <label class="btn btn-default col-xs-4">
                                                     <input type="radio" name="BSW Portal Frame" id="bsw-portal-frame" autocomplete="off" value="Portal Frame">Portal Frame
                                                 </label>
@@ -686,6 +669,7 @@
                     <div class="form-group">
                         <label class="s-header table-header">Roof</label>
                         <div class="row">
+                            <!-- ========================================Roof Single/Double======================================== -->
                             <div class="col-sm-8 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="cables">
                                     <thead>
@@ -711,6 +695,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                            <!-- ========================================Roof Pitch======================================== -->
                             <div class="col-sm-4 stretch">
                                 <table class="table table-bordered table-hover table-responsive" id="cables">
                                     <thead>
@@ -724,7 +709,7 @@
                                     <tr>
                                         <td class="col-sm-4">
                                             <div class="input-group">
-                                                <input class="form-control req" name="Roof Pitch" data-type="number" type="number" placeholder="Pitch" required>
+                                                <input class="form-control req wholeNum" name="Roof Pitch" data-type="number" type="number" placeholder="Pitch" required>
                                                 <span class="input-group-addon">: 12</span>
                                             </div>
                                         </td>

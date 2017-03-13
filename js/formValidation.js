@@ -1,18 +1,35 @@
 $(document).ready(function() {
 
-    // validate number inputSelector
-    var goodNumber = /^(\+|-)?((\d+(\.\d+)?)|(\.\d+))$/
-    var goodPrefix = /^(\+|-)?((\d*(\.?\d*)?)|(\.\d*))$/
-
-    $('.valNum')
+    // Validate positive numbers
+    var posNumber = /^([1-9][0-9]*(\.[0-9]+)?|0?\.[0-9]*[1-9][0-9]*)$/
+    var posPrefix = /^((\d*(\.?\d*)?)|(\.\d*))$/
+    $('.posNum')
         .data("oldValue",'')
         .bind('input propertychange', function() {
             var $this = $(this);
             var newValue = $this.val();
 
-            if ( !goodPrefix.test(newValue) )
+            if ( !posPrefix.test(newValue) && $(this).val() )
                 return $this.val($this.data('oldValue'));
-            if ( goodNumber.test(newValue) || !$(this).val() )
+            if ( posNumber.test(newValue) || !$(this).val() )
+                $this.removeClass("error-border");
+            else
+                $this.addClass("error-border");
+
+            return $this.data('oldValue',newValue)
+        });
+
+    // Validate whole numbers
+    var wholeNumber = /^[1-9][0-9]*$/
+    $('.wholeNum')
+        .data("oldValue",'')
+        .bind('input propertychange', function() {
+            var $this = $(this);
+            var newValue = $this.val();
+
+            if ( !wholeNumber.test(newValue) && $(this).val() )
+                return $this.val($this.data('oldValue'));
+            if ( wholeNumber.test(newValue) || !$(this).val() )
                 $this.removeClass("error-border");
             else
                 $this.addClass("error-border");
