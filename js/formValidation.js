@@ -1,4 +1,26 @@
 $(document).ready(function() {
+    // Validate names
+    var valName = /^[a-zA-Z]+$/
+    $('.name')
+        .data("oldValue",'')
+        .bind('input propertychange', function() {
+            var $this = $(this);
+            var newValue = $this.val();
+            if ( !valName.test(newValue) && $(this).val() )
+                return $this.val($this.data('oldValue'));
+
+            return $this.data('oldValue',newValue)
+        });
+    // Do not allow spaces but allow for backspacing
+    $('.name').on({
+        keydown: function(e) {
+            if (e.which === 32)
+                return false;
+        },
+        change: function() {
+            this.value = this.value.replace(/\s/g, "");
+        }
+    });
 
     // Validate positive numbers
     var posNumber = /^([1-9][0-9]*(\.[0-9]+)?|0?\.[0-9]*[1-9][0-9]*)$/
@@ -8,7 +30,6 @@ $(document).ready(function() {
         .bind('input propertychange', function() {
             var $this = $(this);
             var newValue = $this.val();
-
             if ( !posPrefix.test(newValue) && $(this).val() )
                 return $this.val($this.data('oldValue'));
             if ( posNumber.test(newValue) || !$(this).val() )
@@ -26,7 +47,6 @@ $(document).ready(function() {
         .bind('input propertychange', function() {
             var $this = $(this);
             var newValue = $this.val();
-
             if ( !wholeNumber.test(newValue) && $(this).val() )
                 return $this.val($this.data('oldValue'));
             if ( wholeNumber.test(newValue) || !$(this).val() )
@@ -36,6 +56,58 @@ $(document).ready(function() {
 
             return $this.data('oldValue',newValue)
         });
+
+    // Validate phone numbers
+    var phoneNumber = /^\+[1-9]{1}[0-9]{7,11}$/
+    $('.phoneNum')
+        .data("oldValue",'')
+        .bind('input propertychange', function() {
+            var $this = $(this);
+            var newValue = $this.val();
+            if ( !phoneNumber.test(newValue) && $(this).val() )
+                return $this.val($this.data('oldValue'));
+            if ( phoneNumber.test(newValue) || !$(this).val() )
+                $this.removeClass("error-border");
+            else
+                $this.addClass("error-border");
+
+            return $this.data('oldValue',newValue)
+        });
+
+    // Validate zip codes
+    var zipCode = /^([0-9]{5})(?:[-\s]*([0-9]{4}))?$/
+    var zipDigit = /^[0-9]{0,9}$/
+    $('.zip')
+        .data("oldValue",'')
+        .bind('input propertychange', function() {
+            var $this = $(this);
+            var newValue = $this.val();
+            if ( !zipDigit.test(newValue) )
+                return $this.val($this.data('oldValue'));
+            if ( zipCode.test(newValue) || !$(this).val() )
+                $this.removeClass("error-border");
+            else
+                $this.addClass("error-border");
+
+            return $this.data('oldValue',newValue)
+        });
+
+    // Validate emails
+    var email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$//
+        $('.email')
+            .data("oldValue",'')
+            .bind('input propertychange', function() {
+                var $this = $(this);
+                var newValue = $this.val();
+                if ( !email.test(newValue) && $(this).val() )
+                    return $this.val($this.data('oldValue'));
+                if ( email.test(newValue) || !$(this).val() )
+                    $this.removeClass("error-border");
+                else
+                    $this.addClass("error-border");
+
+                return $this.data('oldValue',newValue)
+            });
 });
 
 $(function() {

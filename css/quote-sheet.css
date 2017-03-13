@@ -505,11 +505,16 @@ h2.modal-title {
     text-align: left;
 }
 
-.hiddenRow>div>h4 {
+.hiddenRow h4 {
+    padding: 0 3em;
     text-align: justify;
     font-size: 1.2em;
     font-weight: bold;
     color: #FF6600;
+}
+
+.hiddenRow .spacer {
+    padding: 0 1.5em;
 }
 
 .popover{
