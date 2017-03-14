@@ -17,7 +17,7 @@ $(document).ready(function() {
     ================================================== */
 
     // Disable input for overhang
-    $('#overhang-no').on('click', function() {
+    $('#overhang-no-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#overhang-all').addClass('hide');
@@ -28,7 +28,7 @@ $(document).ready(function() {
     });
 
     // Enable input for overhang
-    $('#overhang-yes').on('click', function() {
+    $('#overhang-yes-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#overhang-all').removeClass('hide');
@@ -94,7 +94,7 @@ $(document).ready(function() {
      ================================================== */
 
     // Disable input for liner
-    $('#liner-panel-no').on('click', function() {
+    $('#wall-liner-no-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').addClass('hide');
@@ -105,7 +105,7 @@ $(document).ready(function() {
     });
 
     // Enable input for liner
-    $('#liner-panel-mloc').on('click', function() {
+    $('#wall-liner-ploc-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').removeClass('hide');
@@ -116,7 +116,7 @@ $(document).ready(function() {
     });
 
     // Enable input for liner
-    $('#liner-panel-ploc').on('click', function() {
+    $('#wall-liner-rloc-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').removeClass('hide');
@@ -127,7 +127,7 @@ $(document).ready(function() {
     });
 
     // Enable input for liner
-    $('#liner-panel-rloc').on('click', function() {
+    $('#wall-liner-mloc-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#liner-walls-all').removeClass('hide');
@@ -200,7 +200,7 @@ $(document).ready(function() {
         $('#wainscot-all-in').attr('disabled', !this.checked);
     });
 
-    $('#wainscot-no').on('click', function() {
+    $('#wainscot-no-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#wainscot-all').addClass('hide');
@@ -209,7 +209,7 @@ $(document).ready(function() {
             }
         }
     });
-    $('#wainscot-yes').on('click', function() {
+    $('#wainscot-yes-label').on('click', function() {
         $(this).addClass('active');
         if ($(this).hasClass('active')) {
             $('#wainscot-all').removeClass('hide');
