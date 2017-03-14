@@ -490,6 +490,11 @@ h2.modal-title {
     pointer-events: none;
 }
 
+.modal-table {
+    margin: 0 auto;
+    width: 85%;
+}
+
 .modal-content {
     /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
     width: inherit;

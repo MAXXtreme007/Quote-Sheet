@@ -1,4 +1,15 @@
 $(document).ready(function() {
+    // Capitalize first words in inputs
+    $('.form-control').on('input propertychange', function(event) {
+        var $this = $(this),
+            val = $this.val(),
+            regex = /\b[a-z]/g;
+
+        val.toLowerCase().replace(regex, function(letter) {
+            return letter.toUpperCase();
+        });
+    });
+
     // Validate names
     var valName = /^[a-zA-Z]+$/
     $('.name')
@@ -11,10 +22,12 @@ $(document).ready(function() {
 
             return $this.data('oldValue',newValue)
         });
-    // Do not allow spaces but allow for backspacing
+    // Do not allow invalid inputs
     $('.name').on({
         keydown: function(e) {
-            if (e.which === 32)
+            if (e.which === 8 || e.which === 9 || e.which === 13|| e.which === 16 || e.which >= 37 && e.which <= 40 || e.which >= 65 && e.which <= 90 || e.which >= 97 && e.which <= 122)
+                return true;
+            else
                 return false;
         },
         change: function() {
