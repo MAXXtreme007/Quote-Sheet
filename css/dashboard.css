@@ -31,6 +31,10 @@ h1
     text-align: center;
 }
 
+.tab {
+    text-indent: 2em;
+}
+
 .navbar-nav>li>a {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -125,7 +129,7 @@ h1
 }
 
 #title {
-    padding-top: 50px;
+    padding-top: 70px;
 }
 
 #stats {
@@ -243,7 +247,7 @@ h1
 }
 
 .media-left {
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 /* standard navbar */
@@ -300,8 +304,8 @@ h1
     .nav>a {
         padding: 10px;
     }
-    .collapse {
+    /*.collapse {
         min-height: 330px;
-    }
+    }*/
 }
 
