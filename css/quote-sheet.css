@@ -491,8 +491,32 @@ h2.modal-title {
 }
 
 .modal-table {
-    margin: 0 auto;
+    margin: 0 auto 50px;
     width: 85%;
+}
+
+.modal-table td {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.modal-table tr {
+    border-bottom: 3px solid #FF6600;
+}
+
+.modal-table a {
+    color: #FF6600;
+}
+    .modal-table a:hover {
+        color: #FF6600;
+        text-decoration: underline;
+    }
+
+.mini-header {
+    background-color: #FF6600;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .modal-content {
@@ -504,23 +528,35 @@ h2.modal-title {
     pointer-events: all;
 }
 
+/* ==================================================
+   Accordion
+================================================== */
 .hiddenRow {
+    background-color: #35495D;
     padding: 0 !important;
-    height: 0px;
+    height: 0;
     text-align: left;
 }
 
 .hiddenRow h4 {
     padding: 0 3em;
-    text-align: justify;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-weight: bold;
     color: #FF6600;
+}
+
+.hiddenRow ul {
+    color: #FFFFFF;
+    font-size: 1.2em;
 }
 
 .hiddenRow .spacer {
     padding: 0 1.5em;
 }
+
+/* ==================================================
+   Popover
+================================================== */
 
 .popover{
     width:240px;
@@ -539,6 +575,10 @@ h2.modal-title {
 #notes {
     text-align: left;
 }
+
+/* ==================================================
+   Buttons
+================================================== */
 
 .btn-default.active {
     background-color: #FF6600;
